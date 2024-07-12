@@ -1,0 +1,37 @@
+@import '../variables.module.scss';
+
+.headerMain {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    z-index: 9;
+    height: 100px;
+
+    .logoMain {
+        a {
+            svg {
+                height: 55px;
+            }
+        }
+    }
+
+    &.active {
+        position: fixed;
+        top: 0;
+        background-color: $primary-color;
+        animation: slideFromTop 0.5s forwards;
+    }
+
+    @keyframes slideFromTop {
+        from {
+            top: -50px;
+            opacity: 0;
+        }
+
+        to {
+            top: 0;
+            opacity: 1;
+        }
+    }
+}

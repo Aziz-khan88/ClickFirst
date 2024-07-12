@@ -1,0 +1,97 @@
+@import './variables.module.scss';
+
+.servicesSec {
+
+    .serviceContainer {
+        display: flex;
+        gap: 0px;
+        list-style-type: none;
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .servicesItem {
+            flex: 0 0 calc(33.33% - 0px);
+            max-width: calc(33.33% - 0px);
+            box-sizing: border-box;
+            border-right: 1px solid $border-color;
+            border-bottom: 1px solid $border-color;
+            @include padding(50px, 30px);
+            transition: background-color 0.3s ease;
+
+            .itemIcon {
+                margin-bottom: 20px;
+            }
+
+            .itemTxt {
+                a {
+                    @include font-size(16px);
+
+                    svg {
+                        margin-left: 8px;
+                        transition: transform 0.3s ease;
+                    }
+                }
+
+            }
+
+            &:nth-child(3),
+            &:last-child {
+                border-right: 0px;
+            }
+
+            &:nth-child(4),
+            &:nth-child(5),
+            &:last-child {
+                border-bottom: 0px;
+            }
+
+            &:hover {
+                background: $primary-color;
+                transition: background-color 0.3s ease;
+
+                .itemIcon {
+                    svg {
+                        path {
+                            fill: $white-color;
+                        }
+                    }
+                }
+
+                .itemTxt {
+
+                    h3,
+                    p {
+                        color: $white-color
+                    }
+
+                    a {
+                        color: $white-color;
+                        font-weight: 500;
+
+                        svg {
+                            transform: rotate(-180deg);
+                            transition: transform 0.3s ease;
+
+                            path {
+                                fill: $white-color;
+                            }
+                        }
+
+                        &:hover {
+                            color: $secondary-color;
+
+                            svg {
+                                path {
+                                    fill: $secondary-color;
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+}

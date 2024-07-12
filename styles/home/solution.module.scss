@@ -1,0 +1,10 @@
+@import './variables.module.scss';
+
+.solutionSec {
+    background: $black-color;
+
+    h2 {
+        color: $white-color;
+        margin-bottom: 20px;
+    }
+}

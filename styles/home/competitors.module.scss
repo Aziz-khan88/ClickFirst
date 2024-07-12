@@ -1,0 +1,28 @@
+@import './variables.module.scss';
+
+.competitorsSec {
+    h2 {
+        span {
+            color: $white-color;
+            padding: 0px 20px;
+            display: flex;
+            align-items: center;
+            max-width: max-content;
+
+
+            &.first {
+                background: $primary-color;
+                display: block;
+                margin-bottom: 5px;
+                // border-radius: 0px 18px 18px 18px;
+            }
+
+            &.last {
+                background: $secondary-color;
+                display: block;
+                // border-radius: 18px 18px 0px 18px;
+
+            }
+        }
+    }
+}

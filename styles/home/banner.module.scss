@@ -1,0 +1,50 @@
+@import './variables.module.scss';
+
+.homeSec {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: $primary-color;
+
+    .bannerContent {
+        position: absolute;
+        max-width: 500px;
+        left: 50%;
+        top: 92%;
+        transform: translate(-50%, -92%);
+        text-align: center;
+
+        .bannerTagline {
+            @include font-size(20px);
+            color: $white-color;
+            margin-bottom: 0px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            svg {
+                transform: rotate(-10deg);
+                margin-right: 10px;
+            }
+        }
+
+        h1 {
+            @include font-size(35px);
+            line-height: 50px;
+            color: $white-color;
+            font-weight: 400;
+
+            span {
+                display: block;
+                background: $secondary-color;
+                padding: 5px 20px;
+                max-width: max-content;
+                margin: auto;
+                border-radius: 0px 18px 18px 18px;
+            }
+
+        }
+    }
+
+}

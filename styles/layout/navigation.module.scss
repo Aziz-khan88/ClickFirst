@@ -1,0 +1,45 @@
+@import '../variables.module.scss';
+
+
+.mainMenu {
+    ul {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        li {
+            a {
+                @include font-size(16px);
+                color: $white-color;
+                padding: 0px 20px;
+                text-transform: capitalize;
+                line-height: 21px;
+                font-weight: 500;
+                @include transition(all);
+
+                &:hover {
+                    @include transition(all);
+                    color: $secondary-color
+                }
+            }
+
+            &:last-child {
+                margin-left: 15px;
+
+                a {
+                    @include button(transparent, $white-color, $white-color, 15px);
+
+                    &:hover {
+                        background-color: $secondary-color;
+                        color: $white-color;
+                        border-color: $secondary-color;
+                    }
+                }
+            }
+        }
+
+    }
+}
