@@ -1,0 +1,143 @@
+@import './variables.module.scss';
+
+.embla {
+    max-width: 100%;
+
+    .embla__viewport {
+        overflow: hidden;
+
+        .embla__container {
+            backface-visibility: hidden;
+            display: flex;
+            touch-action: pan-y pinch-zoom;
+            justify-content: space-between;
+
+            .embla__slide {
+                flex: 0 0 536px;
+                height: 480px;
+                min-width: 0;
+                padding-left: 10px;
+
+                .testimonialBox {
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 20px;
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        background: rgb(0, 0, 0);
+                        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%);
+                        width: 100%;
+                        height: 100%;
+                        z-index: 0;
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        border-radius: 15px;
+                        transition: height 0.3s ease-in-out;
+                    }
+
+                    .itemMain {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 30px;
+                        height: 100px;
+                        position: absolute;
+                        width: 100%;
+                        bottom: 0px;
+                        border-radius: 0px 0px 15px 15px;
+
+                        .itemText {
+                            @include font-size(25px);
+                            line-height: 35px;
+                            color: $white-color;
+                            font-weight: 600;
+                            text-align: left;
+                            @include transition(all);
+
+                            span {
+                                display: block;
+                                @include font-size(18px);
+                                line-height: 28px;
+                                font-weight: 300;
+                            }
+                        }
+
+
+                    }
+
+                    &:hover {
+                        .itemText {
+                            color: $secondary-color;
+                            @include transition(all);
+                        }
+
+                        .itemMain {
+                            .playBtn {
+                                cursor: pointer;
+
+                                svg {
+                                    path {
+                                        fill: $secondary-color;
+                                        @include transition(all);
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .embla__button__container {
+            display: flex;
+            justify-content: end;
+            gap: 15px;
+            margin-top: 25px;
+            margin-right: 10px;
+
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                svg {
+                    width: 30px;
+                    height: 30px;
+
+
+                    path {
+                        fill: $black-color;
+                    }
+                }
+
+                &.embla__prev {
+                    font-size: 10px;
+                    transform: rotate(180deg);
+                }
+
+                &.embla__next {
+                    font-size: 10px;
+                }
+
+                &.disabled {
+                    svg {
+                        path {
+                            fill: $disabled-color;
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+
+}

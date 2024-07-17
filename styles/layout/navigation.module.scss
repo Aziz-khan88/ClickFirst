@@ -20,6 +20,7 @@
                 font-weight: 500;
                 @include transition(all);
 
+
                 &:hover {
                     @include transition(all);
                     color: $secondary-color
@@ -31,6 +32,7 @@
 
                 a {
                     @include button(transparent, $white-color, $white-color, 15px);
+                    font-weight: 400;
 
                     &:hover {
                         background-color: $secondary-color;

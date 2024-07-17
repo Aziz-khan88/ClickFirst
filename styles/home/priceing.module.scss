@@ -1,0 +1,64 @@
+@import './variables.module.scss';
+
+.priceingSec {
+    padding-top: 0px;
+
+    h2 {
+        span {
+            display: block;
+        }
+    }
+
+    .tabHeader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .tabName {
+            color: $secondary-color;
+            width: 225px;
+            height: 100px;
+            background: #F5F5F5;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            @include font-size(20px);
+            color: $black-color;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+
+            span {
+                display: block;
+                color: $primary-color;
+                font-weight: 400;
+            }
+
+            &.active {
+                background: $primary-color;
+                color: $white-color;
+                transition: background-color 0.3s ease-in-out;
+
+                span {
+                    color: $white-color;
+                }
+
+            }
+        }
+    }
+
+    .tabBody {
+        display: block;
+
+        .tabContent {
+            display: none;
+
+            &.active {
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,174 @@
+@import './variables.module.scss';
+
+.footerSec {
+    @include padding(90px, 0px, 50px);
+    background: #F7F7F7;
+
+    .footerLogo {
+        margin-bottom: 30px;
+
+        svg {
+            height: 55px;
+
+            path {
+                fill: #252B33;
+            }
+        }
+    }
+
+    .footerIcons {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        li {
+            height: 35px;
+            margin-right: 35px;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+
+            a {
+                &:hover {
+                    svg {
+                        path {
+                            fill: $secondary-color;
+                        }
+                    }
+                }
+
+                &.instagram {
+                    &:hover {
+                        svg {
+                            path {
+                                fill: $white-color;
+                            }
+
+                            rect {
+                                fill: $secondary-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footerLinks {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: start;
+
+        .usefullLinks {
+            ul {
+                list-style: none;
+                padding: 0px;
+                margin: 0px;
+
+                li {
+                    margin-bottom: 10px;
+
+                    a {
+                        @include font-size(16px);
+                        color: $black-color;
+                        line-height: 22px;
+                        @include transition(all);
+                        font-weight: 400;
+
+                        &:hover {
+                            color: $secondary-color;
+                            @include transition(all);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .locationSce {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+
+        li {
+            gap: 25px;
+            display: flex;
+            margin-bottom: 30px;
+            justify-content: start;
+
+            div:first-child {
+                flex: 0 0 20px;
+            }
+
+            a {
+                color: $black-color;
+                @include transition(all);
+
+                &:hover {
+                    color: $secondary-color;
+                    @include transition(all);
+                }
+            }
+
+        }
+    }
+}
+
+.copyRightSec {
+    background: #F7F7F7;
+    height: 90px;
+
+    p {
+        margin-bottom: 0px;
+        color: $black-color;
+    }
+
+    ul {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        li {
+            a {
+                color: $black-color;
+                margin-left: 10px;
+                @include font-size(14px);
+                padding-left: 10px;
+                @include transition(all);
+                height: 20px;
+                display: inline-block;
+                position: relative;
+
+                &:after {
+                    content: '';
+                    background: $black-color;
+                    height: 100%;
+                    width: 1px;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                }
+
+                &:hover {
+                    color: $secondary-color;
+                    @include transition(all);
+                }
+            }
+
+            &:first-child {
+                a {
+                    margin-left: 0px;
+                    padding-left: 0px;
+
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

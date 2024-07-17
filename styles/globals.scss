@@ -34,11 +34,26 @@ body {
         margin-bottom: 20px;
     }
 
-    h4 {}
+    h4 {
+        @include font-size(20px);
+        line-height: 35px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
 
-    h5 {}
+    h5 {
+        @include font-size(25px);
+        line-height: 35px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
 
-    h6 {}
+    h6 {
+        @include font-size(18px);
+        line-height: 25px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
 
     P {
         @include font-size(16px);
@@ -48,8 +63,22 @@ body {
         color: $text-color;
     }
 
+    ul {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
     .bordreLine {
         margin-bottom: 50px;
     }
 
+    .modal-content {
+        border-radius: 20px;
+        background: transparent;
+    }
+
+    .modal-backdrop {
+        --bs-backdrop-opacity: 0.9;
+    }
 }

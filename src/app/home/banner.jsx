@@ -1,7 +1,7 @@
-import VideoPlayer from '../../components/videoplayer'
+import VideoPlayer from '@/src/components/videoplayer'
 import { Col, Container, Row } from 'react-bootstrap'
-import styles from "../../../styles/home/banner.module.scss";
-import { AdvertisingIcon } from '../app-constants';
+import styles from '@/styles/home/banner.module.scss';
+import { AdvertisingIcon } from '@/src/app/app-constants'
 
 const Banner = () => {
     return (

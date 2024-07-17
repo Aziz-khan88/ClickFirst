@@ -1,8 +1,7 @@
-"use client"
 import { Col, Container, Row } from "react-bootstrap"
-import styles from "../../../styles/home/solution.module.scss"
-import SolutionCarousel from "../../components/solutioncarousel"
-import { TitleBorderLine } from "../app-constants"
+import styles from "@/styles/home/solution.module.scss"
+import { TitleBorderLine } from "@/src/app/app-constants"
+import SolutionMain from "@/src/components/solutionmain"
 
 const Solution = () => {
     return (
@@ -18,7 +17,8 @@ const Solution = () => {
             <Container fluid>
                 <Row>
                     <Col xl={12} lg={12}>
-                        <SolutionCarousel />
+
+                        <SolutionMain />
                     </Col>
                 </Row>
             </Container>

@@ -51,5 +51,40 @@
         P {
             color: $white-color
         }
+
+        .btnFlex {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 50px;
+
+            .buttonBlack {
+                @include button($black-color, $white-color, $black-color, 16px);
+                border-radius: 5px;
+                display: flex;
+                padding: 0px 20px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
+            }
+
+            .buttonTrans {
+                @include button(transparent, $white-color, $white-color, 16px);
+                border-radius: 5px;
+                display: flex;
+                padding: 0px 20px;
+                max-width: 240px;
+
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
+            }
+        }
+
     }
 }

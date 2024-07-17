@@ -1,0 +1,17 @@
+@import './variables.module.scss';
+
+.testimonialSec {
+    .buttonClass {
+        @include button($primary-color, $white-color, $primary-color, 16px);
+        margin: 0px auto 0px;
+        border-radius: 5px;
+        @include gradient-background(90deg, rgba(57, 106, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
+        border: 0px;
+        max-width: 280px;
+
+        &:hover {
+            background: $secondary-color;
+            border: 0px;
+        }
+    }
+}

@@ -1,7 +1,8 @@
 import { Col, Container, Row } from "react-bootstrap"
-import styles from "../../../styles/home/campaigns.module.scss"
+import styles from "@/styles/home/campaigns.module.scss"
 import Image from "next/image"
-import CampaignsImg from "../../../public/home/CampaignsImg.png"
+import CampaignsImg from "media/home/CampaignsImg.png"
+import Link from "next/link"
 
 
 const Campaigns = () => {
@@ -19,6 +20,10 @@ const Campaigns = () => {
                         <p>Navigating the complexities of paid marketing, identifying the right niches, and reaching your ideal target audience can be overwhelming. Ineffective ad targeting, poor optimization, and lack of actionable insights can lead to subpar results and wasted investment.</p>
                         <p>Release the full potential of your brand with Click First SMM&apos;s Paid Marketing Services. Our expert team creates and manages effective paid marketing campaigns tailored to your niche, ensuring you reach your target audience and achieve your marketing goals.</p>
                         <p>Ready to take your brand to the next level? Contact Click First SMM today and start seeing real results!</p>
+                        <div className={styles.btnFlex}>
+                            <Link href="#" className={styles.buttonBlack}>Get a Free Quote</Link>
+                            <Link href="#" className={styles.buttonTrans}>Call Now: 346-299-2202</Link>
+                        </div>
                     </Col>
                     <Col xl={6} lg={6} className="mt-auto">
                         <Image src={CampaignsImg} alt="CampaignsImg" height={600} />

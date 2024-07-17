@@ -1,0 +1,11 @@
+@import './variables.module.scss';
+
+
+.videoPopup {
+    max-width: 1000px;
+    height: 500px;
+    @include padding(20px);
+    border-radius: 20px;
+    background: $black-color;
+
+}

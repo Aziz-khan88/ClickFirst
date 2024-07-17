@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap"
-import styles from "../../../styles/home/partner.module.scss"
-import { GoogleIcon, LinkedinIcon, MetaIcon, SnapChatIcon, TiktokIcon } from "../app-constants"
+import styles from "@/styles/home/partner.module.scss"
+import { GoogleIcon, LinkedinIcon, MetaIcon, SnapChatIcon, TiktokIcon } from "@/src/app/app-constants"
 
 const Partner = () => {
     return (

@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap"
-import styles from "../../../styles/home/services.module.scss"
-import { ArrowIcon, ServicesIcon1, ServicesIcon2, ServicesIcon3, ServicesIcon4, ServicesIcon5, ServicesIcon6 } from "../app-constants"
+import styles from "@/styles/home/services.module.scss"
+import { ArrowIcon, ServicesIcon1, ServicesIcon2, ServicesIcon3, ServicesIcon4, ServicesIcon5, ServicesIcon6 } from "@/src/app/app-constants"
 import Link from "next/link"
 
 
