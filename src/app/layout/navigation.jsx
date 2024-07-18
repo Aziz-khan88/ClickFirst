@@ -12,10 +12,10 @@ const Navigation = (props) => {
                     <Link href="#">Services</Link>
                 </li>
                 <li>
-                    <Link href="#">YouTube monetization</Link>
+                    <Link href="#">Influencer Marketing</Link>
                 </li>
                 <li>
-                    <Link href="#">Influencer Marketing</Link>
+                    <Link href="#">YouTube monetization</Link>
                 </li>
                 <li>
                     <Link href="#">About</Link>

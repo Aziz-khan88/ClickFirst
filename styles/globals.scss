@@ -23,6 +23,11 @@ body {
         }
     }
 
+    .modal-lg,
+    .modal-xl {
+        max-width: 600px;
+    }
+
     .container {
         max-width: $max-container;
     }

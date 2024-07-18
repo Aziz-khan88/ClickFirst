@@ -14,8 +14,6 @@ const TestimonilSlider = (props) => {
 
     const [modalShow, setModalShow] = useState(false);
     const [videoUrl, setvideoUrl] = useState("");
-    const [isPrevDisabled, setIsPrevDisabled] = useState(true);
-    const [isNextDisabled, setIsNextDisabled] = useState(false);
 
     useEffect(() => {
         if (!embla) return;
@@ -36,13 +34,6 @@ const TestimonilSlider = (props) => {
 
     };
 
-    const prevButtonHandler = () => {
-        if (embla) embla.scrollPrev();
-    };
-
-    const nextButtonHandler = () => {
-        if (embla) embla.scrollNext();
-    };
     return (
         <section className={`${styles.embla}`}>
             <div className={styles.embla__viewport} ref={emblaRef}>
@@ -59,14 +50,6 @@ const TestimonilSlider = (props) => {
                             </div>
                         </div>
                     ))}
-                </div>
-                <div className={styles.embla__button__container}>
-                    <div className={`${styles.embla__prev} ${isPrevDisabled ? `${styles.disabled}` : ''}`} onClick={prevButtonHandler}>
-                        <CarouselArrow direction="prev" />
-                    </div>
-                    <div className={`${styles.embla__next} ${isNextDisabled ? `${styles.disabled}` : ''}`} onClick={nextButtonHandler}>
-                        <CarouselArrow direction="next" />
-                    </div>
                 </div>
             </div>
 

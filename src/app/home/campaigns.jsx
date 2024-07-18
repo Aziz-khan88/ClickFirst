@@ -25,7 +25,7 @@ const Campaigns = () => {
                         </div>
                     </Col>
                     <Col xl={6} lg={6} className="my-auto">
-                        <Image src={CampaignsImg} alt="CampaignsImg" height={778} width={796} loading="lazy" />
+                        <Image src={CampaignsImg} alt="CampaignsImg" height={778} width={796} />
                     </Col>
                 </Row>
             </Container>

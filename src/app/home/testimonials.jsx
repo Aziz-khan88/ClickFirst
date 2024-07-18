@@ -6,44 +6,25 @@ import IMG01 from "media/home/test/test01.png"
 import Link from 'next/link'
 
 
-const OPTIONS = { align: 'start', dragFree: true, loop: false }
+const OPTIONS = { align: 'start', loop: false }
 const SLIDES = [
     {
         name: "Mustafa Sharif",
         position: "Marketania",
-        videoUrl: "https://www.youtube.com/embed/aezzM70lWDo",
+        videoUrl: "/home/test/video1.mp4",
         img: IMG01.src
 
     }, {
         name: "Mustafa Sharif",
         position: "Marketania",
-        videoUrl: "https://www.youtube.com/embed/aezzM70lWDo",
+        videoUrl: "/home/test/video1.mp4",
         img: IMG01.src
 
     }
     , {
         name: "Mustafa Sharif",
         position: "Marketania",
-        videoUrl: "https://www.youtube.com/embed/aezzM70lWDo",
-        img: IMG01.src
-
-    }, {
-        name: "Mustafa Sharif",
-        position: "Marketania",
-        videoUrl: "https://www.youtube.com/embed/aezzM70lWDo",
-        img: IMG01.src
-
-    }, {
-        name: "Mustafa Sharif",
-        position: "Marketania",
-        videoUrl: "https://www.youtube.com/embed/aezzM70lWDo",
-        img: IMG01.src
-
-    }
-    , {
-        name: "Mustafa Sharif",
-        position: "Marketania",
-        videoUrl: "https://www.youtube.com/embed/aezzM70lWDo",
+        videoUrl: "/home/test/video1.mp4",
         img: IMG01.src
 
     }

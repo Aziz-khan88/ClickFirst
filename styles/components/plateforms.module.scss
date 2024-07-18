@@ -16,14 +16,30 @@
             align-items: center;
 
             .platformIcon {
+                cursor: pointer;
+
                 svg {
-                    margin-bottom: 30px
+                    margin-bottom: 30px;
+                    transition: .5s;
+                    transform: scale(0.9);
                 }
 
                 .platformName {
                     @include font-size(15px);
                     color: $black-color;
                     margin-bottom: 0px;
+                    font-weight: 500;
+                }
+
+                &:hover {
+                    svg {
+                        transform: scale(1);
+
+                        path {
+                            fill: var(--original-color);
+                            // transition: fill 0.5s ease-in-out;
+                        }
+                    }
                 }
             }
 
