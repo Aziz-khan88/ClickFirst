@@ -35,6 +35,11 @@
             transform: translate(-50%, -50%);
         }
     }
+
+    .videoPopup {
+        max-width: 1000px;
+        height: 360px;
+    }
 }
 
 
@@ -48,5 +53,10 @@
             height: 480px;
             border-radius: 20px;
         }
+    }
+
+    .videoPopup {
+        max-width: 1000px;
+        height: 280px;
     }
 }
