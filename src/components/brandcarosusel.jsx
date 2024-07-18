@@ -9,7 +9,7 @@ import IMG02 from "media/home/brands/img02.png"
 import IMG03 from "media/home/brands/img03.png"
 import IMG04 from "media/home/brands/img04.png"
 import IMG05 from "media/home/brands/img05.png"
-import { CarouselArrow } from '@/src/app/app-constants'
+import { CarouselArrow, PlayIcon } from '@/src/app/app-constants'
 
 const data = [
     {
@@ -115,6 +115,9 @@ const BrandCarousel = ({ onVideoSelect }) => {
                             <div style={{ backgroundImage: `url(${item.img})` }} className={`${styles.itemImg} ${activeIndex === index ? `${styles.active}` : ''}`}>
                                 <div className={styles.overlaySce}></div>
                                 <div className={styles.itemName}>{item.title}</div>
+                                <div className={styles.playBtn}>
+                                    <PlayIcon />
+                                </div>
                             </div>
                         </div>
                     </div>

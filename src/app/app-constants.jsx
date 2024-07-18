@@ -2356,3 +2356,15 @@ export function NavIcon() {
         </svg>
     );
 }
+
+export function PlayIcon() {
+    return (<svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="#fff"
+        version="1.1"
+        viewBox="0 0 64 64"
+        xmlSpace="preserve"
+    >
+        <path d="M46.014 31.105L25.197 20.697a1.003 1.003 0 00-1.447.895v20.816a1 1 0 001.447.895l20.817-10.408a1 1 0 000-1.79zM25.75 40.79V23.21L43.33 32l-17.58 8.79z"></path>
+    </svg>)
+}
