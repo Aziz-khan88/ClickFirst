@@ -2329,3 +2329,30 @@ export function PhoneIcon() {
         </svg>
     )
 }
+export function NavIcon() {
+    return (
+        <svg className="vbp-header-menu-button__svg">
+            <line
+                x2="100%"
+                y1="50%"
+                y2="50%"
+                className="top"
+                shapeRendering="crispEdges"
+            ></line>
+            <line
+                x2="100%"
+                y1="50%"
+                y2="50%"
+                className="middle"
+                shapeRendering="crispEdges"
+            ></line>
+            <line
+                x2="100%"
+                y1="50%"
+                y2="50%"
+                className="bottom"
+                shapeRendering="crispEdges"
+            ></line>
+        </svg>
+    );
+}

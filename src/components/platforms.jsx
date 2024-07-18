@@ -65,14 +65,14 @@ const Platforms = () => {
         <section className={`ptb-100 ${styles.platfromSec}`}>
             <Container>
                 <Row>
-                    <Col xxl={10} xl={10} lg={12} className="m-auto text-center">
+                    <Col xxl={11} xl={12} lg={12} className="m-auto text-center">
                         <h2><span>Platforms</span> We Work With</h2>
                         <div className={styles.platfromBox}>
                             {data.map((item, index) => (
                                 <div className={styles.platfromItem} key={index}>
                                     <div className={styles.platformIcon}>
                                         {item.icon}
-                                        <h5>{item.title}</h5>
+                                        <div className={styles.platformName}>{item.title}</div>
                                     </div>
 
                                 </div>

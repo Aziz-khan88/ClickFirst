@@ -45,3 +45,209 @@
 
     }
 }
+
+@include media-query(1799px) {
+    .mainMenu {
+        ul {
+
+            li {
+                a {
+                    @include font-size(15px);
+                    padding: 0px 20px;
+                    line-height: 21px;
+                }
+
+                &:last-child {
+                    a {
+                        @include button(transparent, $white-color, $white-color, 14px);
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@include media-query(1599px) {
+    .mainMenu {
+        ul {
+
+            li {
+                a {
+                    @include font-size(14px);
+                    padding: 0px 15px;
+                    line-height: 21px;
+                }
+
+                &:last-child {
+                    a {
+                        @include button(transparent, $white-color, $white-color, 14px);
+                        height: 45px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@include media-query(1399px) {
+    .mainMenu {
+        ul {
+
+            li {
+                a {
+                    @include font-size(14px);
+                    padding: 0px 12px;
+                    line-height: 21px;
+                }
+
+                &:last-child {
+                    a {
+                        @include button(transparent, $white-color, $white-color, 14px);
+                        height: 42px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@include media-query(1299px) {
+    .mainMenu {
+        ul {
+            li {
+                a {
+                    @include font-size(13px);
+                    padding: 0px 12px;
+                    line-height: 20px;
+                }
+
+                &:last-child {
+                    a {
+                        @include button(transparent, $white-color, $white-color, 13px);
+                        height: 40px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@include media-query(1100px) {
+    .mainMenu {
+        ul {
+            li {
+                a {
+                    @include font-size(11px);
+                    padding: 0px 10px;
+                    line-height: 20px;
+                }
+
+                &:last-child {
+                    margin-left: 10px;
+
+                    a {
+                        @include button(transparent, $white-color, $white-color, 11px);
+                        height: 35px;
+                        border: 1px solid;
+
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@include media-query(800px) {
+    .mainMenu {
+        position: absolute;
+        width: 300px;
+        height: calc(100vh - 60px);
+        background: $primary-color;
+        @include gradient-background(90deg, rgba(57, 106, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
+        top: 60px;
+        right: -300px;
+        transition: width 0.5s, opacity 0.5s;
+        z-index: 999;
+        opacity: 0;
+        overflow: hidden;
+        animation: slideFromTop 0.5s forwards;
+
+
+
+        ul {
+            opacity: 0;
+        }
+
+        &.active {
+            right: 0px;
+            opacity: 1;
+            animation: slideFromTop 0.5s forwards;
+
+
+            ul {
+                opacity: 1;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+                @include padding(20px);
+
+                li {
+                    margin-bottom: 20px;
+
+                    a {
+                        @include font-size(14px);
+                    }
+
+                    &:last-child {
+                        margin-left: 10px;
+
+                        a {
+                            @include button(transparent, $white-color, $white-color, 14px);
+                        }
+                    }
+                }
+
+            }
+        }
+
+
+
+    }
+}
+
+@include media-query(666px) {
+    .mainMenu {
+
+
+        &.active {
+
+
+            ul {
+                @include padding(20px);
+
+                li {
+                    margin-bottom: 20px;
+
+                    a {
+                        @include font-size(14px);
+                    }
+
+                    &:last-child {
+                        margin-left: 10px;
+
+                        a {
+                            @include button(transparent, $white-color, $white-color, 14px);
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}

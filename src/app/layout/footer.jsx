@@ -9,7 +9,7 @@ const Footer = () => {
             <section className={styles.footerSec}>
                 <Container>
                     <Row>
-                        <Col xl={3} lg={3}>
+                        <Col xl={3} lg={3} md={4}>
                             <div className={styles.footerLogo}>
                                 <Link href="">
                                     <ClickFirstLogo />
@@ -43,7 +43,7 @@ const Footer = () => {
                                 </li>
                             </ul>
                         </Col>
-                        <Col xl={6} lg={6}>
+                        <Col xl={6} lg={5} md={8}>
                             <div className={styles.footerLinks}>
                                 <div className={styles.usefullLinks}>
                                     <h6>LINKS</h6>
@@ -67,7 +67,7 @@ const Footer = () => {
                                 </div>
                             </div>
                         </Col>
-                        <Col xl={3} lg={3}>
+                        <Col xl={3} lg={4} md={12}>
                             <ul className={styles.locationSce}>
                                 <li>
                                     <div>
@@ -112,10 +112,10 @@ const Footer = () => {
             <section className={styles.copyRightSec}>
                 <Container className="h-100">
                     <Row className="h-100">
-                        <Col xl={6} lg={6} className="my-auto">
+                        <Col xl={6} lg={6} md={6} className="my-auto">
                             <p>Copyright @ClickFirstSMM 2024</p>
                         </Col>
-                        <Col xl={6} lg={6} className="my-auto">
+                        <Col xl={6} lg={6} md={6} className="my-auto">
                             <ul className={styles.legalLinks}>
                                 <li>
                                     <Link href="#">Terms and Conditions</Link>

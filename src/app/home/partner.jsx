@@ -7,7 +7,7 @@ const Partner = () => {
         <section className={`ptb-50 ${styles.partnerSec}`}>
             <Container className="h-100">
                 <Row className="h-100">
-                    <Col xl={8} lg={10} className="m-auto text-center">
+                    <Col xxl={8} xl={9} lg={10} className="m-auto text-center">
                         <h2>Our Marketing Partners</h2>
                         <div className={styles.partnerLogo}>
                             <div className={styles.logoBox}>

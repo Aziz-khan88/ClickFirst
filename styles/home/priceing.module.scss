@@ -2,6 +2,7 @@
 
 .priceingSec {
     padding-top: 0px;
+    overflow-x: hidden;
 
     h2 {
         span {
@@ -58,6 +59,107 @@
 
             &.active {
                 display: block;
+            }
+        }
+    }
+}
+
+@include media-query(1799px) {
+    .priceingSec {
+        .tabHeader {
+            gap: 20px;
+
+            .tabName {
+                width: 225px;
+                height: 100px;
+                @include font-size(20px);
+            }
+        }
+    }
+}
+
+@include media-query(1599px) {
+    .priceingSec {
+        .tabHeader {
+            gap: 20px;
+
+            .tabName {
+                width: 225px;
+                height: 100px;
+                @include font-size(20px);
+            }
+        }
+    }
+}
+
+@include media-query(1399px) {
+    .priceingSec {
+        .tabHeader {
+            gap: 20px;
+
+            .tabName {
+                width: 225px;
+                height: 100px;
+                @include font-size(20px);
+            }
+        }
+    }
+}
+
+@include media-query(1299px) {
+    .priceingSec {
+        .tabHeader {
+            gap: 20px;
+
+            .tabName {
+                width: 200px;
+                height: 90px;
+                @include font-size(18px);
+            }
+        }
+    }
+}
+
+@include media-query(1100px) {
+    .priceingSec {
+        .tabHeader {
+            gap: 15px;
+
+            .tabName {
+                width: 180px;
+                height: 80px;
+                @include font-size(17px);
+            }
+        }
+    }
+}
+
+@include media-query(800px) {
+    .priceingSec {
+        .tabHeader {
+            gap: 15px;
+
+            .tabName {
+                width: 160px;
+                height: 70px;
+                @include font-size(15px);
+            }
+        }
+    }
+}
+
+
+@include media-query(666px) {
+    .priceingSec {
+        padding: 0px !important;
+
+        .tabHeader {
+            gap: 5px;
+
+            .tabName {
+                width: 140px;
+                height: 60px;
+                @include font-size(13px);
             }
         }
     }

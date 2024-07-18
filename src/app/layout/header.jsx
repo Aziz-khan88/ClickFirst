@@ -1,13 +1,14 @@
 "use client";
 import { useState, useEffect } from 'react';
-import styles from "../../../styles/layout/header.module.scss"
+import styles from "@/styles/layout/header.module.scss"
 import { Col, Container, Row } from 'react-bootstrap'
-import { ClickFirstLogo } from '../app-constants'
+import { ClickFirstLogo, NavIcon } from '@/src/app/app-constants'
 import Link from 'next/link'
 import Navigation from './navigation'
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
+    const [isActive, setIsActive] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -19,19 +20,32 @@ const Header = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    const handleClick = () => {
+        setIsActive(!isActive);
+        if (!isActive) {
+            document.body.classList.add('active');
+        } else {
+            document.body.classList.remove('active');
+        }
+    };
     return (
         <section className={`${styles.headerMain} ${scrolled ? styles.active : ''}`}>
             <Container className="h-100">
                 <Row className="h-100">
                     <Col xxl={3} xl={3} lg={3} md={6} xs={6} className="my-auto">
                         <div className={styles.logoMain}>
-                            <Link href="/">
+                            <Link href={"/"}>
                                 <ClickFirstLogo />
                             </Link>
                         </div>
                     </Col>
-                    <Col xxl={9} xl={9} lg={9} md={9} xs={9} className="my-auto">
-                        <Navigation />
+                    <Col xxl={9} xl={9} lg={9} md={6} xs={6} className="my-auto">
+                        <div onClick={handleClick}
+                            className={`${isActive ? 'navIcon active' : 'navIcon'}`}>
+                            <NavIcon />
+                        </div>
+                        <Navigation isActive={isActive} />
                     </Col>
                 </Row>
             </Container>

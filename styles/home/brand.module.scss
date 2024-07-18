@@ -43,7 +43,7 @@
         display: block;
         width: 373px;
         height: 746px;
-        margin-left: auto;
+        margin: auto;
         position: relative;
 
         video {
@@ -80,6 +80,168 @@
             position: absolute;
             bottom: 220px;
             left: -80px;
+        }
+    }
+}
+
+@include media-query(1399px) {
+    .BrandSec {
+        .buttonClass {
+            @include button($primary-color, $white-color, $primary-color, 16px);
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+
+        .influenceVideo {
+            background-size: contain;
+            background-position: center center;
+            width: 373px;
+            height: 746px;
+
+            .Youtube {
+                bottom: 10px;
+                right: -70px;
+                width: 100px;
+            }
+
+            .Instagram {
+                top: 30px;
+                right: -50px;
+                width: 80px;
+            }
+
+            .Tiktok {
+                top: -30px;
+                left: -30px;
+                width: 80px;
+            }
+
+            .Facebook {
+                bottom: 220px;
+                left: -50px;
+                width: 80px;
+            }
+        }
+    }
+}
+
+@include media-query(1299px) {
+    .BrandSec {
+        .buttonClass {
+            @include button($primary-color, $white-color, $primary-color, 15px);
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+
+        .influenceVideo {
+            background-size: contain;
+            background-position: center center;
+            width: 373px;
+            height: 746px;
+
+            video {
+                width: 330px;
+                height: 746px;
+                border-radius: 60px;
+            }
+
+            .Youtube {
+                bottom: 10px;
+                right: -70px;
+                width: 100px;
+            }
+
+            .Instagram {
+                top: 30px;
+                right: -50px;
+                width: 80px;
+            }
+
+            .Tiktok {
+                top: -30px;
+                left: -30px;
+                width: 80px;
+            }
+
+            .Facebook {
+                bottom: 220px;
+                left: -50px;
+                width: 80px;
+            }
+        }
+    }
+}
+
+@include media-query(1100px) {
+    .BrandSec {
+        .buttonClass {
+            @include button($primary-color, $white-color, $primary-color, 14px);
+            border-radius: 5px;
+        }
+
+        .influenceVideo {
+            background-size: contain;
+            background-position: center center;
+            width: 350px;
+            height: 750px;
+
+            video {
+                width: 320px;
+                height: 700px;
+                border-radius: 60px;
+            }
+
+            .Youtube {
+                bottom: 10px;
+                right: -30px;
+                width: 70px;
+            }
+
+            .Instagram {
+                top: 30px;
+                right: -30px;
+                width: 60px;
+            }
+
+            .Tiktok {
+                top: 10px;
+                left: -30px;
+                width: 60px;
+            }
+
+            .Facebook {
+                bottom: 220px;
+                left: -40px;
+                width: 60px;
+            }
+        }
+    }
+}
+
+@include media-query(800px) {
+    .BrandSec {
+        .buttonClass {
+            @include button($primary-color, $white-color, $primary-color, 14px);
+            border-radius: 5px;
+        }
+
+        .influenceVideo {
+            display: none;
+        }
+
+    }
+}
+
+
+@include media-query(666px) {
+    .BrandSec {
+        .buttonClass {
+            @include button($primary-color, $white-color, $primary-color, 13px);
+            border-radius: 5px;
+        }
+
+        .influenceVideo {
+            display: none;
         }
     }
 }

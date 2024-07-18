@@ -6,7 +6,7 @@ import Image from "next/image"
 
 const Competitors = () => {
     return (
-        <section className={`ptb-50 ${styles.competitorsSec}`}>
+        <section className={`ptb-100 ${styles.competitorsSec}`}>
             <Container className="h-100">
                 <Row className="h-100">
                     <Col xl={6} lg={6} className="my-auto">
@@ -19,7 +19,8 @@ const Competitors = () => {
                         <p>So why settle for boring, ineffective creatives when you can up-level your social media game with the power of captivating visuals? Contact Click First SMM today and start crafting a content strategy that will take your brand to new heights. Get ready to say goodbye to creatives and hello to social media success!</p>
                     </Col>
                     <Col xl={6} lg={6} className="my-auto">
-                        <Image src={CompetitorsImg} alt="CompetitorsImg" />
+                        <Image src={CompetitorsImg} alt="Click-First" width={796}
+                            height={772} loading="lazy" />
                     </Col>
                 </Row>
             </Container>

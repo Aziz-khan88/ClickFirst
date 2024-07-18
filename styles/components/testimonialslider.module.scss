@@ -13,7 +13,8 @@
             justify-content: space-between;
 
             .embla__slide {
-                flex: 0 0 536px;
+                flex: 0 0 33.33%;
+                max-width: 536px;
                 height: 480px;
                 min-width: 0;
                 padding-left: 10px;
@@ -140,4 +141,256 @@
         }
     }
 
+}
+
+@include media-query(1799px) {
+    .embla {
+        .embla__viewport {
+            .embla__container {
+                .embla__slide {
+                    height: 480px;
+                    padding-left: 15px;
+
+                    .testimonialBox {
+                        .itemMain {
+                            padding: 30px;
+                            height: 100px;
+                            bottom: 0px;
+
+                            .itemText {
+                                @include font-size(24px);
+                                line-height: 24px;
+
+                                span {
+                                    @include font-size(17px);
+                                    line-height: 27px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+@include media-query(1599px) {
+    .embla {
+        .embla__viewport {
+            .embla__container {
+                .embla__slide {
+                    height: 450px;
+                    padding-left: 15px;
+
+                    .testimonialBox {
+                        .itemMain {
+                            padding: 30px;
+                            height: 100px;
+                            bottom: 0px;
+
+                            .itemText {
+                                @include font-size(22px);
+                                line-height: 22px;
+
+                                span {
+                                    @include font-size(16px);
+                                    line-height: 26px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+@include media-query(1399px) {
+    .embla {
+        .embla__viewport {
+            .embla__container {
+                .embla__slide {
+                    height: 400px;
+                    padding-left: 10px;
+
+                    .testimonialBox {
+                        .itemMain {
+                            padding: 20px;
+                            height: 80px;
+                            bottom: 0px;
+
+                            .itemText {
+                                @include font-size(20px);
+                                line-height: 20px;
+
+                                span {
+                                    @include font-size(15px);
+                                    line-height: 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@include media-query(1299px) {
+    .embla {
+        .embla__viewport {
+            .embla__container {
+                .embla__slide {
+                    height: 400px;
+                    padding-left: 10px;
+
+                    .testimonialBox {
+                        .itemMain {
+                            padding: 20px;
+                            height: 80px;
+                            bottom: 0px;
+
+                            .itemText {
+                                @include font-size(20px);
+                                line-height: 20px;
+
+                                span {
+                                    @include font-size(15px);
+                                    line-height: 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@include media-query(1100px) {
+    .embla {
+        .embla__viewport {
+            .embla__container {
+                .embla__slide {
+                    height: 300px;
+                    padding-left: 10px;
+
+                    .testimonialBox {
+                        .itemMain {
+                            padding: 15px;
+                            height: 70px;
+                            bottom: 0px;
+
+                            .itemText {
+                                @include font-size(18px);
+                                line-height: 20px;
+
+                                span {
+                                    @include font-size(13px);
+                                    line-height: 23px;
+                                }
+                            }
+
+                            .playBtn {
+                                svg {
+                                    height: 40px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@include media-query(800px) {
+    .embla {
+        .embla__viewport {
+            .embla__container {
+                .embla__slide {
+                    flex: 0 0 40%;
+                    height: 300px;
+                    padding-left: 10px;
+
+                    .testimonialBox {
+                        .itemMain {
+                            padding: 15px;
+                            height: 70px;
+                            bottom: 0px;
+
+                            .itemText {
+                                @include font-size(18px);
+                                line-height: 20px;
+
+                                span {
+                                    @include font-size(13px);
+                                    line-height: 23px;
+                                }
+                            }
+
+                            .playBtn {
+                                svg {
+                                    height: 40px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+@include media-query(666px) {
+    .embla {
+        .embla__viewport {
+            .embla__container {
+                .embla__slide {
+                    flex: 0 0 85%;
+                    height: 300px;
+                    padding-left: 10px;
+
+                    .testimonialBox {
+                        .itemMain {
+                            padding: 15px;
+                            height: 70px;
+                            bottom: 0px;
+
+                            .itemText {
+                                @include font-size(18px);
+                                line-height: 20px;
+
+                                span {
+                                    @include font-size(13px);
+                                    line-height: 23px;
+                                }
+                            }
+
+                            .playBtn {
+                                svg {
+                                    height: 40px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .embla__button__container {
+                justify-content: center;
+                margin: 20px 0px;
+            }
+
+        }
+    }
 }

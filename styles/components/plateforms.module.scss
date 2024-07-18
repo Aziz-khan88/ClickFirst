@@ -20,7 +20,7 @@
                     margin-bottom: 30px
                 }
 
-                h5 {
+                .platformName {
                     @include font-size(15px);
                     color: $black-color;
                     margin-bottom: 0px;
@@ -28,6 +28,119 @@
             }
 
 
+        }
+    }
+}
+
+
+@include media-query(1399px) {
+    .platfromSec {
+        .platfromBox {
+            .platfromItem {
+                height: 160px;
+
+                .platformIcon {
+                    svg {
+                        margin-bottom: 20px
+                    }
+
+                    .platformName {
+                        @include font-size(15px);
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+@include media-query(1299px) {
+    .platfromSec {
+        .platfromBox {
+            .platfromItem {
+                height: 150px;
+
+                .platformIcon {
+                    svg {
+                        margin-bottom: 20px;
+                        height: 40px;
+                    }
+
+                    .platformName {
+                        @include font-size(14px);
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+@include media-query(1100px) {
+    .platfromSec {
+        .platfromBox {
+            .platfromItem {
+                height: 150px;
+
+                .platformIcon {
+                    svg {
+                        margin-bottom: 20px;
+                        height: 40px;
+                    }
+
+                    .platformName {
+                        @include font-size(14px);
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+@include media-query(800px) {
+    .platfromSec {
+        .platfromBox {
+            .platfromItem {
+                height: 110px;
+
+                .platformIcon {
+                    svg {
+                        margin-bottom: 20px;
+                        height: 30px;
+                    }
+
+                    .platformName {
+                        @include font-size(13px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@include media-query(666px) {
+    .platfromSec {
+        .platfromBox {
+            .platfromItem {
+                height: 80px;
+                flex: 1 0 25%;
+
+                .platformIcon {
+                    svg {
+                        margin-bottom: 10px;
+                        height: 25px;
+                    }
+
+                    .platformName {
+                        @include font-size(11px);
+                    }
+                }
+            }
         }
     }
 }

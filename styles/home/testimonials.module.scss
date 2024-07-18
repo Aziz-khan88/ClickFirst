@@ -15,3 +15,43 @@
         }
     }
 }
+
+
+
+
+@include media-query(1299px) {
+    .testimonialSec {
+        .buttonClass {
+            @include button($primary-color, $white-color, $primary-color, 15px);
+            margin: 0px auto 0px;
+        }
+    }
+}
+
+@include media-query(1100px) {
+    .testimonialSec {
+        .buttonClass {
+            @include button($primary-color, $white-color, $primary-color, 14px);
+            margin: 0px auto 0px;
+        }
+    }
+}
+
+@include media-query(800px) {
+    .testimonialSec {
+        .buttonClass {
+            @include button($primary-color, $white-color, $primary-color, 14px);
+            margin: 0px auto 0px;
+        }
+    }
+}
+
+
+@include media-query(666px) {
+    .testimonialSec {
+        .buttonClass {
+            @include button($primary-color, $white-color, $primary-color, 13px);
+            margin: 0px auto 0px;
+        }
+    }
+}

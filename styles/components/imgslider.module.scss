@@ -17,6 +17,7 @@
                 min-width: 0;
                 padding-left: 1rem;
                 height: 300px;
+                max-height: 300px;
 
                 img {
                     object-fit: cover;
@@ -24,6 +25,104 @@
                     height: 100%;
                 }
 
+            }
+        }
+    }
+}
+
+
+@include media-query(1599px) {
+    .embla {
+        margin-bottom: 0.5rem;
+
+        .embla__viewport {
+            .embla__container {
+                .embla__slide {
+                    flex: 0 0 20%;
+                    padding-left: 0.5rem;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1399px) {
+    .embla {
+        margin-bottom: 0.5rem;
+
+        .embla__viewport {
+            .embla__container {
+                .embla__slide {
+                    flex: 0 0 20%;
+                    padding-left: 0.5rem;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1299px) {
+    .embla {
+        margin-bottom: 0.3rem;
+
+        .embla__viewport {
+            .embla__container {
+                .embla__slide {
+                    flex: 0 0 20%;
+                    padding-left: 0.3rem;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1100px) {
+    .embla {
+        margin-bottom: 0.3rem;
+
+        .embla__viewport {
+            .embla__container {
+                .embla__slide {
+                    flex: 0 0 20%;
+                    padding-left: 0.3rem;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+@include media-query(800px) {
+    .embla {
+        margin-bottom: 0.3rem;
+
+        .embla__viewport {
+            .embla__container {
+                .embla__slide {
+                    flex: 0 0 25%;
+                    padding-left: 0.3rem;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+
+@include media-query(666px) {
+    .embla {
+        margin-bottom: 0.3rem;
+
+        .embla__viewport {
+            .embla__container {
+                .embla__slide {
+                    flex: 0 0 50%;
+                    padding-left: 0.3rem;
+                    height: auto;
+                }
             }
         }
     }

@@ -14,15 +14,24 @@
                 background: $primary-color;
                 display: block;
                 margin-bottom: 5px;
-                // border-radius: 0px 18px 18px 18px;
             }
 
             &.last {
                 background: $secondary-color;
                 display: block;
-                // border-radius: 18px 18px 0px 18px;
 
             }
+        }
+    }
+}
+
+@include media-query(800px) {
+    .competitorsSec {
+        img {
+            height: 300px;
+            width: auto;
+            margin: auto;
+            display: block;
         }
     }
 }

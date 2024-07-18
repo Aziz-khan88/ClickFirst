@@ -26,6 +26,7 @@
                     border-radius: 15px;
                     @include padding(15px);
                     position: relative;
+                    overflow: hidden;
 
                     &:after {
                         content: '';
@@ -139,4 +140,196 @@
     }
 
 
+}
+
+@include media-query(1799px) {
+    .embla {
+        .embla__viewport {
+            .embla__container {
+                margin-left: calc(0.8rem * -1);
+
+                .embla__slide.embla__class {
+                    flex: 0 0 20%;
+                    padding-left: 0.8rem;
+
+                    .industriesBox {
+                        height: 458px;
+
+                        .industriesText {
+                            transform: translateY(155px);
+
+                            a {
+                                @include font-size(15px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1599px) {
+    .embla {
+        .embla__viewport {
+            .embla__container {
+                margin-left: calc(0.8rem * -1);
+
+                .embla__slide.embla__class {
+                    flex: 0 0 23%;
+                    padding-left: 0.8rem;
+
+                    .industriesBox {
+                        height: 460px;
+
+
+                        .industriesText {
+                            transform: translateY(145px);
+
+                            a {
+                                @include font-size(14px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1399px) {
+    .embla {
+        .embla__viewport {
+            .embla__container {
+                margin-left: calc(0.8rem * -1);
+
+                .embla__slide.embla__class {
+                    flex: 0 0 23%;
+                    padding-left: 0.8rem;
+
+                    .industriesBox {
+                        height: 420px;
+
+                        .industriesText {
+                            transform: translateY(140px);
+
+                            a {
+                                @include font-size(14px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1299px) {
+    .embla {
+        .embla__viewport {
+            .embla__container {
+                margin-left: calc(0.5rem * -1);
+
+                .embla__slide.embla__class {
+                    flex: 0 0 300px;
+                    padding-left: 0.5rem;
+
+                    .industriesBox {
+                        height: 420px;
+
+
+                        .industriesText {
+                            transform: translateY(135px);
+
+                            a {
+                                @include font-size(13px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1100px) {
+    .embla {
+        .embla__viewport {
+            .embla__container {
+                margin-left: calc(0.5rem * -1);
+
+                .embla__slide.embla__class {
+                    flex: 0 0 290px;
+                    padding-left: 0.5rem;
+
+                    .industriesBox {
+                        height: 380px;
+
+                        .industriesText {
+                            transform: translateY(145px);
+
+                            a {
+                                @include font-size(13px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-query(800px) {
+    .embla {
+        .embla__viewport {
+            .embla__container {
+                margin-left: calc(0.5rem * -1);
+
+                .embla__slide.embla__class {
+                    flex: 0 0 270px;
+                    padding-left: 0.5rem;
+
+                    .industriesBox {
+                        height: 350px;
+
+                        .industriesText {
+                            transform: translateY(145px);
+
+                            a {
+                                @include font-size(12px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@include media-query(600px) {
+    .embla {
+        .embla__viewport {
+            .embla__container {
+                margin-left: calc(0.5rem * -1);
+
+                .embla__slide.embla__class {
+                    flex: 0 0 290px;
+                    padding-left: 0.5rem;
+
+                    .industriesBox {
+                        height: 350px;
+
+                        .industriesText {
+                            transform: translateY(142px);
+
+                            a {
+                                @include font-size(12px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

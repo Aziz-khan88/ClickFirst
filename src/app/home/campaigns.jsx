@@ -8,7 +8,6 @@ import Link from "next/link"
 const Campaigns = () => {
     return (
         <section className={`ptb-100 ${styles.campaignsSec}`}
-        // style={{ backgroundImage: `url(${CampaignsImg.src})` }}
         >
             <Container className={`h-100 ${styles.mainContainer}`}>
                 <Row className="h-100">
@@ -25,8 +24,8 @@ const Campaigns = () => {
                             <Link href="#" className={styles.buttonTrans}>Call Now: 346-299-2202</Link>
                         </div>
                     </Col>
-                    <Col xl={6} lg={6} className="mt-auto">
-                        <Image src={CampaignsImg} alt="CampaignsImg" height={600} />
+                    <Col xl={6} lg={6} className="my-auto">
+                        <Image src={CampaignsImg} alt="CampaignsImg" height={778} width={796} loading="lazy" />
                     </Col>
                 </Row>
             </Container>

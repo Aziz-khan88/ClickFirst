@@ -8,3 +8,11 @@
         margin-bottom: 20px;
     }
 }
+
+@include media-query(666px) {
+    .solutionSec {
+        svg {
+            width: 80%;
+        }
+    }
+}

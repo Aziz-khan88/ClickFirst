@@ -21,7 +21,7 @@ const Guide = () => {
                             <Link href="#" className={styles.buttonTrans}>Call Now: 346-299-2202</Link>
                         </div>
                     </Col>
-                    <Col xl={6} lg={6} className="mt-auto">
+                    <Col xl={6} lg={6} className="my-auto">
                         <Image src={GuideImg} alt="CampaignsImg" height={600} />
                     </Col>
                 </Row>

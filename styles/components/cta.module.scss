@@ -1,13 +1,40 @@
 @import './variables.module.scss';
 
 .ctaSec {
-    // background: $primary-color;
-    // @include gradient-background(90deg, rgba(57, 106, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
+    background: $primary-color;
+    @include gradient-background(90deg, rgba(57, 106, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
     height: 800px;
-    background-image: url("../../public/home/ctaImg.png");
     background-repeat: no-repeat;
-    background-position: 100%;
+    background-position: center center;
     background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+
+    &::before {
+        content: '';
+        background-image: url("../../public/home/ctaImgLeft.png");
+        width: 270px;
+        height: 803px;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: contain;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+    }
+
+    &::after {
+        content: '';
+        background-image: url("../../public/home/ctaImgRight.png");
+        width: 270px;
+        height: 493px;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: contain;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
 
     h2 {
         color: $white-color;
@@ -51,14 +78,14 @@
 
         &:after {
             content: '';
-            background-image: url('../../public/home/pricing/one.svg');
-            width: 50px;
-            height: 50px;
+            background-image: url('../../public/home/chatIcon.svg');
+            width: 98px;
+            height: 98px;
             background-repeat: no-repeat;
             background-size: contain;
             position: absolute;
-            top: 30px;
-            right: 50px;
+            top: 20px;
+            right: 30px;
             transition: height 0.3s ease-in-out;
             opacity: 0;
         }
@@ -72,9 +99,397 @@
             }
 
             &:after {
-                top: -15px;
+                top: -35px;
                 transition: top 0.3s ease-in;
                 opacity: 1;
+            }
+        }
+    }
+}
+
+@include media-query(1799px) {
+    .ctaSec {
+        height: 800px;
+
+        &::before {
+            background-size: 100%;
+        }
+
+        &::after {
+            background-size: 93%;
+            right: -20px;
+        }
+
+        h2 {
+            @include font-size(60px);
+            margin-bottom: 50px;
+        }
+
+        p {
+            margin-bottom: 50px;
+            @include font-size(20px);
+            line-height: 30px;
+            @include padding (0px, 50px)
+        }
+
+        .btnChat {
+            max-width: 600px;
+            height: 190px;
+            margin: 30px auto;
+            @include font-size(40px);
+            line-height: 40px;
+
+            &:after {
+                content: '';
+                width: 98px;
+                height: 98px;
+                top: 20px;
+                right: 30px;
+            }
+
+            &:hover {
+                transition: width 0.3s ease-in-out;
+
+                &:before {
+                    width: 40px;
+                }
+
+                &:after {
+                    top: -35px;
+                    transition: top 0.3s ease-in;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1599px) {
+    .ctaSec {
+        height: 800px;
+
+        &::before {
+            background-size: 100%;
+        }
+
+        &::after {
+            background-size: 90%;
+            right: -28px;
+        }
+
+        h2 {
+            @include font-size(45px);
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin-bottom: 50px;
+            @include font-size(17px);
+            line-height: 30px;
+            @include padding (0px, 60px)
+        }
+
+        .btnChat {
+            max-width: 500px;
+            height: 170px;
+            margin: 30px auto;
+            @include font-size(35px);
+            line-height: 35px;
+
+            &:after {
+                content: '';
+                width: 98px;
+                height: 98px;
+                top: 20px;
+                right: 30px;
+            }
+
+            &:hover {
+                transition: width 0.3s ease-in-out;
+
+                &:before {
+                    width: 40px;
+                }
+
+                &:after {
+                    top: -35px;
+                    transition: top 0.3s ease-in;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1399px) {
+    .ctaSec {
+        height: 700px;
+
+        &::before {
+            background-size: 88%;
+        }
+
+        &::after {
+            background-size: 80%;
+            right: -58px;
+        }
+
+        h2 {
+            @include font-size(42px);
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin-bottom: 50px;
+            @include font-size(16px);
+            line-height: 30px;
+            @include padding (0px, 80px)
+        }
+
+        .btnChat {
+            max-width: 450px;
+            height: 150px;
+            margin: 30px auto;
+            @include font-size(32px);
+            line-height: 32px;
+
+            &:after {
+                content: '';
+                width: 80px;
+                height: 80px;
+                top: 20px;
+                right: 30px;
+            }
+
+            &:hover {
+                transition: width 0.3s ease-in-out;
+
+                &:before {
+                    width: 40px;
+                }
+
+                &:after {
+                    top: -42px;
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1299px) {
+    .ctaSec {
+        height: 600px;
+
+        &::before {
+            background-size: 88%;
+        }
+
+        &::after {
+            background-size: 80%;
+            right: -58px;
+        }
+
+        h2 {
+            @include font-size(40px);
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin-bottom: 50px;
+            @include font-size(16px);
+            line-height: 30px;
+            @include padding (0px, 80px)
+        }
+
+        .btnChat {
+            max-width: 430px;
+            height: 140px;
+            margin: 30px auto;
+            @include font-size(30px);
+            line-height: 30px;
+
+            &:after {
+                content: '';
+                width: 80px;
+                height: 80px;
+                top: 20px;
+                right: 30px;
+            }
+
+            &:hover {
+                transition: width 0.3s ease-in-out;
+
+                &:before {
+                    width: 40px;
+                }
+
+                &:after {
+                    top: -42px;
+                }
+            }
+        }
+    }
+}
+
+@include media-query(1100px) {
+    .ctaSec {
+        height: 600px;
+
+        &::before {
+            background-size: 80%;
+        }
+
+        &::after {
+            background-size: 70%;
+            right: -88px;
+        }
+
+        h2 {
+            @include font-size(35px);
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin-bottom: 50px;
+            @include font-size(15px);
+            line-height: 30px;
+            @include padding (0px, 80px)
+        }
+
+        .btnChat {
+            max-width: 410px;
+            height: 120px;
+            margin: 30px auto;
+            @include font-size(24px);
+            line-height: 24px;
+
+            &:after {
+                content: '';
+                width: 70px;
+                height: 70px;
+                top: 20px;
+                right: 30px;
+            }
+
+            &:hover {
+                transition: width 0.3s ease-in-out;
+
+                &:before {
+                    width: 40px;
+                }
+
+                &:after {
+                    top: -40px;
+                }
+            }
+        }
+    }
+}
+
+@include media-query(800px) {
+    .ctaSec {
+        height: 400px;
+
+        &::before {
+            display: none;
+        }
+
+        &::after {
+            display: none;
+        }
+
+        h2 {
+            @include font-size(30px);
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            @include font-size(15px);
+            line-height: 30px;
+            @include padding (0px, 30px)
+        }
+
+        .btnChat {
+            max-width: 300px;
+            height: 100px;
+            margin: 30px auto;
+            @include font-size(22px);
+            line-height: 22px;
+
+            &:after {
+                content: '';
+                width: 50px;
+                height: 50px;
+                top: 20px;
+                right: 20px;
+            }
+
+            &:hover {
+                transition: width 0.3s ease-in-out;
+
+                &:before {
+                    width: 30px;
+                }
+
+                &:after {
+                    top: -25px;
+                }
+            }
+        }
+    }
+}
+
+
+@include media-query(666px) {
+    .ctaSec {
+        height: auto;
+
+        &::before {
+            display: none;
+        }
+
+        &::after {
+            display: none;
+        }
+
+        h2 {
+            @include font-size(30px);
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            @include font-size(14px);
+            line-height: 24px;
+            @include padding (0px, 0px)
+        }
+
+        .btnChat {
+            max-width: 300px;
+            height: 100px;
+            margin: 30px auto;
+            @include font-size(22px);
+            line-height: 22px;
+
+            &:after {
+                content: '';
+                width: 50px;
+                height: 50px;
+                top: 20px;
+                right: 20px;
+            }
+
+            &:hover {
+                transition: width 0.3s ease-in-out;
+
+                &:before {
+                    width: 30px;
+                }
+
+                &:after {
+                    top: -25px;
+                }
             }
         }
     }

@@ -7,5 +7,46 @@
     @include padding(20px);
     border-radius: 20px;
     background: $black-color;
+}
 
+
+
+@include media-query(800px) {
+    .influenceVideo {
+        background-image: url("../../public/home/brands/Influencer_frame.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        display: block;
+        width: 300px;
+        height: 600px;
+        margin: auto;
+        position: relative;
+
+        video {
+            width: 260px;
+            height: 560px;
+            border-radius: 20px;
+            object-fit: cover;
+            z-index: -1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+
+@include media-query(666px) {
+    .influenceVideo {
+        height: 500px;
+        width: 250px;
+
+        video {
+            width: 230px;
+            height: 480px;
+            border-radius: 20px;
+        }
+    }
 }

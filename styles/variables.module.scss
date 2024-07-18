@@ -19,6 +19,13 @@ $disabled-color :#AAAAAA;
 }
 
 // mixin Of Website
+@mixin media-query($breakpoint) {
+    @media (max-width: $breakpoint) {
+        @content;
+    }
+}
+
+
 @mixin font-size($size) {
     font-size: $size;
 }
@@ -61,7 +68,7 @@ $disabled-color :#AAAAAA;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 0px 18px 18px 18px;
+    border-radius: 5px;
     transition: background-color 0.3s ease;
     max-width: 230px;
     font-weight: 500;
@@ -81,12 +88,4 @@ $disabled-color :#AAAAAA;
 
 @mixin transition($properties, $duration: 0.3s, $timing-function: ease) {
     transition: $properties $duration $timing-function;
-}
-
-.ptb-100 {
-    @include padding(100px, 0px);
-}
-
-.ptb-50 {
-    @include padding(50px, 0px);
 }

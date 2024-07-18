@@ -13,11 +13,8 @@ const Solution = () => {
                         <TitleBorderLine />
                     </Col>
                 </Row>
-            </Container>
-            <Container fluid>
                 <Row>
                     <Col xl={12} lg={12}>
-
                         <SolutionMain />
                     </Col>
                 </Row>

@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import styles from "../../../styles/layout/navigation.module.scss"
 
-const Navigation = () => {
+const Navigation = (props) => {
     return (
-        <div className={styles.mainMenu}>
+        <div className={`${styles.mainMenu} ${props.isActive ? `${styles.active}` : ''}`}>
             <ul>
                 <li>
                     <Link href="#">Home</Link>
