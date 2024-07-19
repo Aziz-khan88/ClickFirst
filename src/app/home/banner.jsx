@@ -12,7 +12,7 @@ const Banner = () => {
                         <VideoPlayer video={"home/click-first-banner-video.mp4"} />
                         <div className={styles.bannerContent}>
                             <h1><span>Digital Marketing Agency</span></h1>
-                            <div className={styles.bannerTagline}><AdvertisingIcon /> No#1 SMM Company in USA</div>
+                            <div className={styles.bannerTagline}><AdvertisingIcon /> No#1 SMM Company in US</div>
                             <div className={styles.bannerTitle}>Equipping Businesses for the Digital Era</div>
                         </div>
                     </Col>

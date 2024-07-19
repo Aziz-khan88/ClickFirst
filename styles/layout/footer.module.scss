@@ -6,9 +6,11 @@
 
     .footerLogo {
         margin-bottom: 30px;
+        width: 300px;
 
         svg {
-            height: 55px;
+            height: auto;
+            width: 300px;
 
             path {
                 fill: #252B33;
@@ -21,12 +23,12 @@
         padding: 0px;
         margin: 0px;
         display: flex;
-        justify-content: start;
+        justify-content: space-between;
         align-items: center;
+        width: 300px;
 
         li {
             height: 35px;
-            margin-right: 35px;
 
             &:last-child {
                 margin-bottom: 0px;
@@ -179,16 +181,11 @@
 
         .footerLogo {
             margin-bottom: 30px;
-
-            svg {
-                height: 55px;
-            }
         }
 
         .footerIcons {
             li {
                 height: 35px;
-                margin-right: 35px;
 
                 a {
                     svg {
@@ -250,15 +247,14 @@
         .footerLogo {
             margin-bottom: 30px;
 
-            svg {
-                height: 50px;
-            }
+            // svg {
+            //     height: 50px;
+            // }
         }
 
         .footerIcons {
             li {
                 height: 30px;
-                margin-right: 30px;
 
                 a {
                     svg {
@@ -332,16 +328,18 @@
 
         .footerLogo {
             margin-bottom: 30px;
+            width: 260px;
 
             svg {
-                height: 45px;
+                width: 260px;
             }
         }
 
         .footerIcons {
+            width: 260px;
+
             li {
                 height: 25px;
-                margin-right: 25px;
 
                 a {
                     svg {
@@ -415,16 +413,18 @@
 
         .footerLogo {
             margin-bottom: 30px;
+            width: 230px;
 
             svg {
-                height: 45px;
+                width: 230px;
             }
         }
 
         .footerIcons {
+            width: 230px;
+
             li {
                 height: 25px;
-                margin-right: 20px;
 
                 a {
                     svg {
@@ -497,21 +497,25 @@
         @include padding(50px, 0px, 30px, 0px);
 
         .footerLogo {
+            width: 230px;
             margin-bottom: 30px;
 
             svg {
-                height: 40px;
+                width: 230px;
+                height: auto;
             }
         }
 
         .footerIcons {
+            width: 230px;
+
             li {
                 height: 20px;
-                margin-right: 15px;
 
                 a {
                     svg {
-                        height: 20px;
+                        height: 25px;
+                        width: auto;
                     }
                 }
             }
@@ -581,16 +585,18 @@
 
         .footerLogo {
             margin-bottom: 30px;
+            width: 230px;
 
             svg {
-                height: 40px;
+                width: 230px;
             }
         }
 
         .footerIcons {
+            width: 230px;
+
             li {
                 height: 20px;
-                margin-right: 30px;
 
                 a {
                     svg {
@@ -671,19 +677,20 @@
         @include padding(50px, 0px, 10px, 0px);
 
         .footerLogo {
+            width: 230px;
             margin-bottom: 20px;
 
             svg {
-                height: 40px;
+                width: 230px;
             }
         }
 
         .footerIcons {
             margin-bottom: 50px;
+            width: 230px;
 
             li {
                 height: 20px;
-                margin-right: 30px;
 
                 a {
                     svg {

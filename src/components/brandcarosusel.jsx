@@ -20,7 +20,7 @@ const data = [
     {
         title: "@_bysarv",
         img: IMG02.src,
-        videoUrl: "home/brands/@kyleecampbell.mp4"
+        videoUrl: "home/test/video1.mp4"
     }
     ,
     {
@@ -31,7 +31,7 @@ const data = [
     {
         title: "@wrjght_",
         img: IMG04.src,
-        videoUrl: "home/brands/@kyleecampbell.mp4"
+        videoUrl: "home/test/video1.mp4"
     },
     {
         title: "@karlieplace",
@@ -41,7 +41,7 @@ const data = [
     {
         title: "@kyleecampbell",
         img: IMG01.src,
-        videoUrl: "home/brands/@kyleecampbell.mp4"
+        videoUrl: "home/test/video1.mp4"
     },
     {
         title: "@_bysarv",
@@ -52,7 +52,7 @@ const data = [
     {
         title: "@natalieoffduty",
         img: IMG03.src,
-        videoUrl: "home/brands/@kyleecampbell.mp4"
+        videoUrl: "home/test/video1.mp4"
     },
     {
         title: "@wrjght_",
@@ -62,7 +62,7 @@ const data = [
     {
         title: "@karlieplace",
         img: IMG05.src,
-        videoUrl: "home/brands/@kyleecampbell.mp4"
+        videoUrl: "home/test/video1.mp4"
     },
 
 ]
@@ -72,7 +72,7 @@ const BrandCarousel = ({ onVideoSelect }) => {
         Autoplay({ playOnInit: false, delay: 3000 })
     ]);
 
-    const [activeIndex, setActiveIndex] = useState(null);
+    const [activeIndex, setActiveIndex] = useState(0);
     const [isPrevDisabled, setIsPrevDisabled] = useState(true);
     const [isNextDisabled, setIsNextDisabled] = useState(false);
 
@@ -85,14 +85,33 @@ const BrandCarousel = ({ onVideoSelect }) => {
         };
 
         embla.on('select', updateButtons);
+        embla.on('init', () => embla.scrollTo(activeIndex));
 
-        return () => embla.off('select', updateButtons);
+        return () => {
+            embla.off('select', updateButtons);
+        };
     }, [embla]);
 
-    const handleSlideClick = (index, videoUrl) => {
-        setActiveIndex(index);
+    useEffect(() => {
+        if (!embla) return;
+        const videoUrl = data[activeIndex].videoUrl;
         onVideoSelect(videoUrl);
-    };
+        if (embla) {
+            embla.scrollTo(activeIndex);
+        }
+        const interval = setInterval(() => {
+            setActiveIndex((prevIndex) => {
+                const newIndex = (prevIndex + 1) % data.length;
+                const videoUrl = data[newIndex].videoUrl;
+                embla.scrollTo(newIndex);
+                onVideoSelect(videoUrl);
+                return newIndex;
+            });
+        }, 10000);
+
+        return () => clearInterval(interval);
+    }, [embla, onVideoSelect]);
+
 
     const prevButtonHandler = () => {
         if (embla) embla.scrollPrev();
@@ -109,15 +128,12 @@ const BrandCarousel = ({ onVideoSelect }) => {
                     <div
                         className={styles.embla__slide}
                         key={index}
-                        onClick={() => handleSlideClick(index, item.videoUrl)}
+                    //  onClick={() => handleSlideClick(index, item.videoUrl)}
                     >
                         <div className={styles.itemBrand} >
                             <div style={{ backgroundImage: `url(${item.img})` }} className={`${styles.itemImg} ${activeIndex === index ? `${styles.active}` : ''}`}>
                                 <div className={styles.overlaySce}></div>
                                 <div className={styles.itemName}>{item.title}</div>
-                                <div className={styles.playBtn}>
-                                    <PlayIcon />
-                                </div>
                             </div>
                         </div>
                     </div>

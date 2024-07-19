@@ -32,7 +32,7 @@ const data = [
         img: IMG03.src
     },
     {
-        title: "Appointmentss",
+        title: "Bookings / Appointments",
         txt: "Encourage customers to book appointments directly with your business.",
         img: IMG04.src
     },

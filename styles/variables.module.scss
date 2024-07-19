@@ -32,7 +32,6 @@ $disabled-color :#AAAAAA;
 
 @mixin padding($top, $right: $top, $bottom: $top, $left: $right) {
     padding: $top $right $bottom $left;
-    background: transparent;
 }
 
 @mixin button($bg-color, $text-color, $border-color, $font-size) {

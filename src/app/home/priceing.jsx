@@ -11,6 +11,12 @@ const tabData = [
     { name: 'Annually', discount: 'SAVE 50%' }
 ]
 
+const PricingData = [
+    { starter: '350', pro: '650', elite: '950', valid: "Annually" },
+    { starter: '400', elite: '700', pro: '1000', valid: "Biannually" },
+    { starter: '600', elite: '900', pro: '1200', valid: "Quarterly" },
+]
+
 
 const Priceing = () => {
     const [activeTab, setActiveTab] = useState(0);
@@ -45,7 +51,7 @@ const Priceing = () => {
                                     key={index}
                                     className={`${styles.tabContent} ${activeTab === index ? `${styles.active}` : ''}`}
                                 >
-                                    <PricingPlan />
+                                    <PricingPlan data={PricingData[index]} />
                                 </div>
                             ))}
                         </div>

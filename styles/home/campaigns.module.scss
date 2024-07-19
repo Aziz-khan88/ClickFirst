@@ -48,7 +48,8 @@
         }
 
         P {
-            color: $white-color
+            color: $white-color;
+            text-align: justify;
         }
 
         .btnFlex {
@@ -161,7 +162,6 @@
 
 
             img {
-                height: 300px;
                 width: auto;
                 margin: 30px auto 0px;
                 display: block;

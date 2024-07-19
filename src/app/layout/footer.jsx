@@ -27,6 +27,11 @@ const Footer = () => {
                                     </a>
                                 </li>
                                 <li>
+                                    <a href="#" target="_blank">
+                                        <FooterLinkedinLogo />
+                                    </a>
+                                </li>
+                                <li>
                                     <a href="#" target="_blank" className={styles.instagram}>
                                         <FooterInstagramLogo />
                                     </a>
@@ -36,11 +41,7 @@ const Footer = () => {
                                         <FooterYoutubeLogo />
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <FooterLinkedinLogo />
-                                    </a>
-                                </li>
+
                             </ul>
                         </Col>
                         <Col xl={6} lg={5} md={8}>

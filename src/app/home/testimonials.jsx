@@ -3,6 +3,8 @@ import { Container, Row, Col } from 'react-bootstrap'
 import styles from "@/styles/home/testimonials.module.scss"
 import TestimonilSlider from '@/src/components/testimonilslider'
 import IMG01 from "media/home/test/test01.png"
+import IMG02 from "media/home/test/test02.png"
+import IMG03 from "media/home/test/test03.png"
 import Link from 'next/link'
 
 
@@ -17,15 +19,15 @@ const SLIDES = [
     }, {
         name: "Mustafa Sharif",
         position: "Marketania",
-        videoUrl: "/home/test/video1.mp4",
-        img: IMG01.src
+        videoUrl: "/home/test/video2.mp4",
+        img: IMG02.src
 
     }
     , {
         name: "Mustafa Sharif",
         position: "Marketania",
-        videoUrl: "/home/test/video1.mp4",
-        img: IMG01.src
+        videoUrl: "/home/test/video3.mp4",
+        img: IMG03.src
 
     }
 ]

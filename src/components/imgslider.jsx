@@ -8,7 +8,7 @@ import Image from "next/image"
 
 const ImgSlider = (props) => {
     const { slides, options } = props
-    const [emblaRef] = useEmblaCarousel(options, [Autoplay()])
+    const [emblaRef] = useEmblaCarousel(options, [Autoplay({ delay: 1000 })])
 
     return (
         <>

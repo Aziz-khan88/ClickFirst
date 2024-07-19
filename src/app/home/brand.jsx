@@ -10,17 +10,16 @@ import Instagram from 'media/home/brands/icons/instagram.png'
 import Tiktok from 'media/home/brands/icons/tiktok.png'
 import Image from "next/image";
 import VideoModal from "@/src/components/videomodal";
-import IMG from 'media/home/brands/InfluencerImg.png'
+
 
 const Brand = () => {
     const [activevideoUrl, setActiveVideoUrl] = useState("");
-    const [modalShow, setModalShow] = useState(false);
-    const [isMobile, setIsMobile] = useState(false);
+    // const [modalShow, setModalShow] = useState(false);
+    // const [isMobile, setIsMobile] = useState(false);
     const videoRef = useRef(null);
 
     const handleVideoSelect = (videoUrl) => {
         setActiveVideoUrl(videoUrl);
-        setModalShow(true);
     };
 
     useEffect(() => {
@@ -30,20 +29,20 @@ const Brand = () => {
         }
     }, [activevideoUrl]);
 
-    const checkScreenSize = () => {
-        if (window.innerWidth <= 800) {
-            setIsMobile(true);
-        } else {
-            setIsMobile(false);
-            setModalShow(false);
-        }
-    };
+    // const checkScreenSize = () => {
+    //     if (window.innerWidth <= 800) {
+    //         setIsMobile(true);
+    //     } else {
+    //         setIsMobile(false);
+    //         setModalShow(false);
+    //     }
+    // };
 
-    useEffect(() => {
-        checkScreenSize();
-        window.addEventListener('resize', checkScreenSize);
-        return () => window.removeEventListener('resize', checkScreenSize);
-    }, []);
+    // useEffect(() => {
+    //     checkScreenSize();
+    //     window.addEventListener('resize', checkScreenSize);
+    //     return () => window.removeEventListener('resize', checkScreenSize);
+    // }, []);
 
     return (
         <section className={`ptb-100 ${styles.BrandSec}`}>
@@ -59,27 +58,18 @@ const Brand = () => {
                         <BrandCarousel onVideoSelect={handleVideoSelect} />
                     </Col>
                     <Col xxl={5} xl={5} lg={5} className='my-auto text-center'>
-                        {!isMobile && (
-                            activevideoUrl !== "" ? (
-                                <div className={styles.influenceVideo}>
-                                    <Image src={Youtube} className={styles.Youtube} alt="Img_01" />
-                                    <Image src={Facebook} className={styles.Facebook} alt="Img_01" />
-                                    <Image src={Instagram} className={styles.Instagram} alt="Img_01" />
-                                    <Image src={Tiktok} className={styles.Tiktok} alt="Img_01" />
+                        <div className={styles.influenceVideo}>
+                            <Image src={Youtube} className={styles.Youtube} alt="Img_01" />
+                            <Image src={Facebook} className={styles.Facebook} alt="Img_01" />
+                            <Image src={Instagram} className={styles.Instagram} alt="Img_01" />
+                            <Image src={Tiktok} className={styles.Tiktok} alt="Img_01" />
 
-                                    <video width="100%" controls autoPlay muted preload="none" ref={videoRef}>
-                                        <source src={activevideoUrl} type="video/mp4" />
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                            ) : (
-                                <Image src={IMG.src} alt="Influencer Img" width={548} height={782} />
-                            )
-                        )}
-                        {isMobile && (
-                            <VideoModal show={modalShow} videoUrl={activevideoUrl} isMobile={isMobile}
-                                onHide={() => setModalShow(false)} className="brandModal" />
-                        )}
+                            <video width="100%" controls autoPlay muted preload="none" ref={videoRef}>
+                                <source src={activevideoUrl} type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
 
                     </Col>
                 </Row>

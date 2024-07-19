@@ -7,12 +7,23 @@
     background: $primary-color;
 
     .bannerContent {
+        // position: absolute;
+        // max-width: 500px;
+        // left: 50%;
+        // bottom: 40px;
+        // transform: translate(-50%, 0px);
+        // text-align: center;
         position: absolute;
         max-width: 500px;
         left: 50%;
-        top: 92%;
-        transform: translate(-50%, -92%);
+        bottom: 0px;
+        transform: translate(-50%, 0px);
         text-align: center;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         .bannerTagline {
             @include font-size(20px);
@@ -26,12 +37,12 @@
             svg {
                 transform: rotate(-10deg);
                 margin-right: 10px;
-                height: 35px;
+                height: 30px;
             }
         }
 
         h1 {
-            @include font-size(35px);
+            @include font-size(32px);
             line-height: 50px;
             color: $white-color;
             font-weight: 400;
@@ -40,10 +51,10 @@
             span {
                 display: block;
                 background: $secondary-color;
-                padding: 5px 20px;
                 max-width: max-content;
                 margin: auto;
                 border-radius: 0px 18px 18px 18px;
+                @include padding(5px, 20px);
             }
 
         }
@@ -63,8 +74,9 @@
         .bannerContent {
             max-width: 500px;
             left: 50%;
-            top: 94%;
-            transform: translate(-50%, -94%);
+            // top: 94%;
+            // transform: translate(-50%, -94%);
+            height: 210px;
 
             .bannerTagline {
                 @include font-size(20px);
@@ -76,11 +88,11 @@
             }
 
             h1 {
-                @include font-size(32px);
-                line-height: 45px;
+                @include font-size(30px);
+                line-height: 40px;
 
                 span {
-                    padding: 5px 20px;
+                    @include padding(5px, 10px);
                     border-radius: 0px 18px 18px 18px;
                 }
 
@@ -103,9 +115,7 @@
 
         .bannerContent {
             max-width: 500px;
-            left: 50%;
-            top: 96%;
-            transform: translate(-50%, -96%);
+            height: 240px;
 
             .bannerTagline {
                 @include font-size(18px);
@@ -146,34 +156,33 @@
 
         .bannerContent {
             max-width: 450px;
-            left: 50%;
-            top: 96%;
-            transform: translate(-50%, -96%);
+            height: 190px;
 
             .bannerTagline {
-                @include font-size(17px);
-                height: 50px;
+                @include font-size(16px);
+                // height: 50px;
 
                 svg {
                     margin-right: 10px;
-                    height: 28px;
+                    height: 25px;
                     width: auto;
                 }
             }
 
             h1 {
-                @include font-size(28px);
-                line-height: 42px;
+                @include font-size(22px);
+                line-height: 32px;
+                margin-bottom: 20px;
 
                 span {
-                    padding: 5px 15px;
+                    @include padding(5px, 10px);
                     border-radius: 0px 15px 15px 15px;
                 }
             }
 
             .bannerTitle {
-                @include font-size(20px);
-                line-height: 30px;
+                @include font-size(18px);
+                line-height: 26px;
                 margin-bottom: 0px;
                 color: $white-color;
             }
@@ -188,16 +197,13 @@
 
         .bannerContent {
             max-width: 450px;
-            left: 50%;
-            top: 96%;
-            transform: translate(-50%, -96%);
+            height: 240px;
 
             .bannerTagline {
-                @include font-size(17px);
-                height: 50px;
+                @include font-size(16px);
 
                 svg {
-                    height: 26px;
+                    height: 24px;
                     width: auto;
                     margin-right: 10px;
                 }
@@ -208,14 +214,14 @@
                 line-height: 34px;
 
                 span {
-                    padding: 5px 15px;
+                    @include padding(5px, 15px);
                     border-radius: 0px 15px 15px 15px;
                 }
             }
 
             .bannerTitle {
-                @include font-size(20px);
-                line-height: 30px;
+                @include font-size(18px);
+                line-height: 26px;
                 margin-bottom: 0px;
                 color: $white-color;
             }
@@ -230,9 +236,7 @@
 
         .bannerContent {
             max-width: 320px;
-            left: 50%;
-            top: 96%;
-            transform: translate(-50%, -96%);
+            height: 180px;
 
             .bannerTagline {
                 @include font-size(13px);
@@ -247,10 +251,10 @@
             h1 {
                 @include font-size(18px);
                 line-height: 28px;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
 
                 span {
-                    padding: 5px 10px;
+                    @include padding(5px, 10px);
                     border-radius: 0px 15px 15px 15px;
                 }
 
@@ -273,9 +277,7 @@
 
         .bannerContent {
             max-width: 300px;
-            left: 50%;
-            top: 96%;
-            transform: translate(-50%, -96%);
+            height: 130px;
 
             .bannerTagline {
                 @include font-size(13px);
@@ -324,10 +326,11 @@
 
             .bannerTagline {
                 @include font-size(16px);
-                height: 60px;
+                margin-bottom: 10px;
+                display: block;
 
                 svg {
-                    height: 25px;
+                    height: 20px;
                     width: auto;
                     margin-right: 10px;
                 }
@@ -336,7 +339,7 @@
             h1 {
                 @include font-size(24px);
                 line-height: 40px;
-                margin-bottom: 0px;
+                margin-bottom: 20px;
 
                 span {
                     padding: 5px 15px;

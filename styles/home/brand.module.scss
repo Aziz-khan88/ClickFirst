@@ -16,10 +16,14 @@
             }
 
             &.last {
-                background: $secondary-color;
+                background: $black-color;
                 display: block;
             }
         }
+    }
+
+    p {
+        text-align: justify;
     }
 
     .buttonClass {
@@ -226,7 +230,41 @@
         }
 
         .influenceVideo {
-            display: none;
+            background-size: contain;
+            background-position: center center;
+            width: 260px;
+            height: 480px;
+
+
+            video {
+                width: 230px;
+                height: 480px;
+                border-radius: 40px;
+            }
+
+            .Youtube {
+                bottom: 10px;
+                right: -30px;
+                width: 70px;
+            }
+
+            .Instagram {
+                top: 30px;
+                right: -30px;
+                width: 60px;
+            }
+
+            .Tiktok {
+                top: 10px;
+                left: -30px;
+                width: 60px;
+            }
+
+            .Facebook {
+                bottom: 220px;
+                left: -40px;
+                width: 60px;
+            }
         }
 
     }
@@ -241,7 +279,7 @@
         }
 
         .influenceVideo {
-            display: none;
+            margin-top: 20px;
         }
     }
 }

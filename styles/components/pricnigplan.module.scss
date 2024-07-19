@@ -29,6 +29,7 @@
                 line-height: 35px;
                 font-weight: 600;
                 margin-bottom: 5px;
+                text-transform: uppercase;
             }
 
             p {
@@ -47,19 +48,20 @@
                         @include font-size(40px);
                         line-height: 40px;
                         font-weight: 600;
+                        margin-bottom: 10px;
 
-                        span {
-                            display: inline-block;
-                            margin-right: 20px;
-                            @include font-size(30px);
-                            line-height: 40px;
-                            font-weight: 400;
-                            text-decoration: line-through;
-                        }
+                        // span {
+                        //     display: inline-block;
+                        //     margin-right: 20px;
+                        //     @include font-size(30px);
+                        //     line-height: 40px;
+                        //     font-weight: 400;
+                        //     text-decoration: line-through;
+                        // }
                     }
 
                     .Time {
-                        @include font-size(20px);
+                        @include font-size(18px);
                         line-height: 30px;
                         font-weight: 400;
                         margin-bottom: 30px;
@@ -168,9 +170,9 @@
             }
         }
 
-        &.active {
-            background: $primary-color;
-            color: $white-color;
+        &:nth-child(2) {
+            // background: $primary-color;
+            // color: $white-color;
 
             &::after {
                 content: '';
@@ -187,44 +189,44 @@
             }
 
 
-            .priceHeader {
-                border-color: $white-color;
+            // .priceHeader {
+            //     border-color: $white-color;
 
-                p {
-                    color: $white-color;
-                }
-            }
+            //     p {
+            //         color: $white-color;
+            //     }
+            // }
 
-            svg {
-                path {
-                    fill: $white-color;
-                }
-            }
+            // svg {
+            //     path {
+            //         fill: $white-color;
+            //     }
+            // }
 
-            .pricePoints {
+            // .pricePoints {
 
-                &::-webkit-scrollbar-thumb {
-                    background-color: #9A9A9A;
-                    outline: 1px solid #9A9A9A;
-                    border-radius: 4px;
-                }
-            }
+            //     &::-webkit-scrollbar-thumb {
+            //         background-color: #9A9A9A;
+            //         outline: 1px solid #9A9A9A;
+            //         border-radius: 4px;
+            //     }
+            // }
 
-            .priceButton {
-                .contactBtn {
-                    @include button($white-color, $primary-color, $primary-color, 16px);
-                    margin: 50px auto 0px;
-                    border-radius: 5px;
-                    @include gradient-background(90deg, $white-color 0%, $white-color 100%);
-                    border: 0px;
+            // .priceButton {
+            //     .contactBtn {
+            //         @include button($white-color, $primary-color, $primary-color, 16px);
+            //         margin: 50px auto 0px;
+            //         border-radius: 5px;
+            //         @include gradient-background(90deg, $white-color 0%, $white-color 100%);
+            //         border: 0px;
 
-                    &:hover {
-                        background: $secondary-color;
-                        border: 0px;
-                        color: $white-color;
-                    }
-                }
-            }
+            //         &:hover {
+            //             background: $secondary-color;
+            //             border: 0px;
+            //             color: $white-color;
+            //         }
+            //     }
+            // }
         }
     }
 }
