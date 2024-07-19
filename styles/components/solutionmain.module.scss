@@ -104,12 +104,22 @@
                 @include button($primary-color, $white-color, $primary-color, 16px);
                 padding: 0px 20px;
                 border-radius: 5px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
             }
 
             .buttonTrans {
                 @include button(transparent, $white-color, $white-color, 16px);
                 border-radius: 5px;
                 max-width: 240px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
             }
         }
     }
@@ -141,12 +151,22 @@
                 @include button($primary-color, $white-color, $primary-color, 16px);
                 padding: 0px 20px;
                 border-radius: 5px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
             }
 
             .buttonTrans {
                 @include button(transparent, $white-color, $white-color, 16px);
                 border-radius: 5px;
                 max-width: 240px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
             }
         }
     }
@@ -178,12 +198,22 @@
                 @include button($primary-color, $white-color, $primary-color, 16px);
                 padding: 0px 20px;
                 border-radius: 5px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
             }
 
             .buttonTrans {
                 @include button(transparent, $white-color, $white-color, 16px);
                 border-radius: 5px;
                 max-width: 240px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
             }
         }
     }
@@ -215,12 +245,22 @@
                 @include button($primary-color, $white-color, $primary-color, 15px);
                 padding: 0px 20px;
                 border-radius: 5px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
             }
 
             .buttonTrans {
                 @include button(transparent, $white-color, $white-color, 15px);
                 border-radius: 5px;
                 max-width: 240px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
             }
         }
     }
@@ -253,12 +293,22 @@
                 @include button($primary-color, $white-color, $primary-color, 14px);
                 padding: 0px 20px;
                 border-radius: 5px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
             }
 
             .buttonTrans {
                 @include button(transparent, $white-color, $white-color, 14px);
                 border-radius: 5px;
                 max-width: 240px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
             }
         }
     }
@@ -290,12 +340,22 @@
                 @include button($primary-color, $white-color, $primary-color, 14px);
                 padding: 0px 20px;
                 border-radius: 5px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
             }
 
             .buttonTrans {
                 @include button(transparent, $white-color, $white-color, 14px);
                 border-radius: 5px;
                 max-width: 240px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
             }
         }
     }
@@ -330,12 +390,22 @@
                 padding: 0px 20px;
                 border-radius: 5px;
                 width: 240px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
             }
 
             .buttonTrans {
                 @include button(transparent, $white-color, $white-color, 14px);
                 border-radius: 5px;
                 width: 240px;
+
+                &:hover {
+                    background: $secondary-color;
+                    border-color: $secondary-color;
+                }
             }
         }
     }

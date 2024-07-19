@@ -17,7 +17,7 @@ const IndustriesSlider = (props) => {
                             < div className={styles.industriesBox} style={{ backgroundImage: `url(${item.img})` }}>
                                 <div className={styles.industriesText}>
                                     <h4>{item.title}</h4>
-                                    <p>Are you looking for information about cleaning services, or do you need help with something specific related to cleaning services?</p>
+                                    <p>{item.txt}</p>
                                     <Link href={item.links} >Learn More <ArrowIcon /></Link>
                                 </div>
                             </div>

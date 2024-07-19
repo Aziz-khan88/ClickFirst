@@ -60,6 +60,12 @@
                 &:last-child {
                     a {
                         @include button(transparent, $white-color, $white-color, 14px);
+
+                        &:hover {
+                            background-color: $secondary-color;
+                            color: $white-color;
+                            border-color: $secondary-color;
+                        }
                     }
                 }
             }
@@ -83,6 +89,12 @@
                     a {
                         @include button(transparent, $white-color, $white-color, 14px);
                         height: 45px;
+
+                        &:hover {
+                            background-color: $secondary-color;
+                            color: $white-color;
+                            border-color: $secondary-color;
+                        }
                     }
                 }
             }
@@ -106,6 +118,12 @@
                     a {
                         @include button(transparent, $white-color, $white-color, 14px);
                         height: 42px;
+
+                        &:hover {
+                            background-color: $secondary-color;
+                            color: $white-color;
+                            border-color: $secondary-color;
+                        }
                     }
                 }
             }
@@ -128,6 +146,12 @@
                     a {
                         @include button(transparent, $white-color, $white-color, 13px);
                         height: 40px;
+
+                        &:hover {
+                            background-color: $secondary-color;
+                            color: $white-color;
+                            border-color: $secondary-color;
+                        }
                     }
                 }
             }
@@ -153,6 +177,12 @@
                         @include button(transparent, $white-color, $white-color, 11px);
                         height: 35px;
                         border: 1px solid;
+
+                        &:hover {
+                            background-color: $secondary-color;
+                            color: $white-color;
+                            border-color: $secondary-color;
+                        }
 
                     }
                 }
@@ -208,6 +238,12 @@
 
                         a {
                             @include button(transparent, $white-color, $white-color, 14px);
+
+                            &:hover {
+                                background-color: $secondary-color;
+                                color: $white-color;
+                                border-color: $secondary-color;
+                            }
                         }
                     }
                 }
@@ -242,6 +278,12 @@
 
                         a {
                             @include button(transparent, $white-color, $white-color, 14px);
+
+                            &:hover {
+                                background-color: $secondary-color;
+                                color: $white-color;
+                                border-color: $secondary-color;
+                            }
                         }
                     }
                 }

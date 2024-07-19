@@ -262,6 +262,15 @@ body {
             @include font-size(15px);
             line-height: 24px;
         }
+
+        ul {
+
+            li {
+                @include font-size(15px);
+                line-height: 24px;
+
+            }
+        }
     }
 
 }
@@ -301,6 +310,15 @@ body {
             @include font-size(14px);
             line-height: 23px;
         }
+
+        ul {
+
+            li {
+                @include font-size(14px);
+                line-height: 24px;
+
+            }
+        }
     }
 }
 
@@ -339,6 +357,16 @@ body {
             @include font-size(14px);
             line-height: 22px;
         }
+
+        ul {
+
+            li {
+                @include font-size(14px);
+                line-height: 24px;
+
+            }
+        }
+
     }
 }
 
@@ -378,6 +406,15 @@ body {
             @include font-size(13px);
             line-height: 20px;
             margin-bottom: 15px;
+        }
+
+        ul {
+
+            li {
+                @include font-size(13px);
+                line-height: 22px;
+
+            }
         }
     }
 }

@@ -6,9 +6,9 @@ import { useState } from 'react';
 
 
 const tabData = [
-    { name: 'Monthly', discount: 'SAVE 20%' },
-    { name: 'Quarterly', discount: 'SAVE 35%' },
-    { name: 'Annually', discount: 'SAVE 50%' }
+    { name: 'Annually' },
+    { name: 'Biannually' },
+    { name: 'Quarterly' }
 ]
 
 const PricingData = [
@@ -41,7 +41,7 @@ const Priceing = () => {
                                     key={index}
                                     className={`${styles.tabName} ${activeTab === index ? `${styles.active}` : ''}`}
                                     onClick={() => handleTabClick(index)}
-                                >{tab.name}<span>({tab.discount})</span>
+                                >{tab.name}
                                 </div>
                             ))}
                         </div>

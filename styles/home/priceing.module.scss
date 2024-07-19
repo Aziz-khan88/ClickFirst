@@ -18,10 +18,10 @@
 
         .tabName {
             color: $secondary-color;
-            width: 225px;
-            height: 100px;
+            width: 200px;
+            height: 60px;
             background: #F5F5F5;
-            border-radius: 15px;
+            border-radius: 5px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -31,6 +31,8 @@
             font-weight: 500;
             cursor: pointer;
             transition: background-color 0.3s ease-in-out;
+            text-transform: uppercase;
+            box-shadow: 0 1px 10px 0 #0000009a;
 
             span {
                 display: block;
@@ -42,6 +44,7 @@
                 background: $primary-color;
                 color: $white-color;
                 transition: background-color 0.3s ease-in-out;
+                box-shadow: 0 1px 23px 0 #0000009a;
 
                 span {
                     color: $white-color;
@@ -70,8 +73,6 @@
             gap: 20px;
 
             .tabName {
-                width: 225px;
-                height: 100px;
                 @include font-size(20px);
             }
         }
@@ -84,8 +85,6 @@
             gap: 20px;
 
             .tabName {
-                width: 225px;
-                height: 100px;
                 @include font-size(20px);
             }
         }
@@ -98,8 +97,6 @@
             gap: 20px;
 
             .tabName {
-                width: 225px;
-                height: 100px;
                 @include font-size(20px);
             }
         }
@@ -112,8 +109,6 @@
             gap: 20px;
 
             .tabName {
-                width: 200px;
-                height: 90px;
                 @include font-size(18px);
             }
         }
@@ -126,8 +121,6 @@
             gap: 15px;
 
             .tabName {
-                width: 180px;
-                height: 80px;
                 @include font-size(17px);
             }
         }
@@ -140,8 +133,8 @@
             gap: 15px;
 
             .tabName {
-                width: 160px;
-                height: 70px;
+                width: 150px;
+                height: 50px;
                 @include font-size(15px);
             }
         }
@@ -157,8 +150,8 @@
             gap: 5px;
 
             .tabName {
-                width: 140px;
-                height: 60px;
+                width: 120px;
+                height: 40px;
                 @include font-size(13px);
             }
         }

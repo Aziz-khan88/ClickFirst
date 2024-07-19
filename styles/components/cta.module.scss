@@ -3,7 +3,7 @@
 .ctaSec {
     background: $primary-color;
     @include gradient-background(90deg, rgba(57, 106, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
-    height: 800px;
+    // height: 800px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -54,7 +54,7 @@
         max-width: 600px;
         height: 190px;
         border: 2px solid $white-color;
-        margin: 30px auto;
+        margin: 30px auto 0px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -109,7 +109,7 @@
 
 @include media-query(1799px) {
     .ctaSec {
-        height: 800px;
+        // height: 800px;
 
         &::before {
             background-size: 100%;
@@ -121,7 +121,7 @@
         }
 
         h2 {
-            @include font-size(60px);
+            @include font-size(50px);
             margin-bottom: 50px;
         }
 
@@ -129,13 +129,13 @@
             margin-bottom: 50px;
             @include font-size(20px);
             line-height: 30px;
-            @include padding (0px, 50px)
+            @include padding (0px, 100px)
         }
 
         .btnChat {
             max-width: 600px;
             height: 190px;
-            margin: 30px auto;
+            margin: 30px auto 0px;
             @include font-size(40px);
             line-height: 40px;
 
@@ -166,7 +166,7 @@
 
 @include media-query(1599px) {
     .ctaSec {
-        height: 800px;
+        // height: 800px;
 
         &::before {
             background-size: 100%;
@@ -184,15 +184,15 @@
 
         p {
             margin-bottom: 50px;
-            @include font-size(17px);
+            @include font-size(16px);
             line-height: 30px;
-            @include padding (0px, 60px)
+            @include padding (0px, 100px)
         }
 
         .btnChat {
             max-width: 500px;
             height: 170px;
-            margin: 30px auto;
+            margin: 30px auto 0px;
             @include font-size(35px);
             line-height: 35px;
 
@@ -223,7 +223,7 @@
 
 @include media-query(1399px) {
     .ctaSec {
-        height: 700px;
+        // height: 700px;
 
         &::before {
             background-size: 88%;
@@ -235,7 +235,7 @@
         }
 
         h2 {
-            @include font-size(42px);
+            @include font-size(40px);
             margin-bottom: 30px;
         }
 
@@ -248,8 +248,8 @@
 
         .btnChat {
             max-width: 450px;
-            height: 150px;
-            margin: 30px auto;
+            height: 130px;
+            margin: 30px auto 0px;
             @include font-size(32px);
             line-height: 32px;
 
@@ -278,7 +278,7 @@
 
 @include media-query(1299px) {
     .ctaSec {
-        height: 600px;
+        // height: 600px;
 
         &::before {
             background-size: 88%;
@@ -302,16 +302,16 @@
         }
 
         .btnChat {
-            max-width: 430px;
-            height: 140px;
-            margin: 30px auto;
+            max-width: 400px;
+            height: 120px;
+            margin: 30px auto 0px;
             @include font-size(30px);
             line-height: 30px;
 
             &:after {
                 content: '';
-                width: 80px;
-                height: 80px;
+                width: 60px;
+                height: 60px;
                 top: 20px;
                 right: 30px;
             }
@@ -333,7 +333,7 @@
 
 @include media-query(1100px) {
     .ctaSec {
-        height: 600px;
+        // height: 600px;
 
         &::before {
             background-size: 80%;
@@ -357,16 +357,16 @@
         }
 
         .btnChat {
-            max-width: 410px;
-            height: 120px;
-            margin: 30px auto;
+            max-width: 350px;
+            height: 100px;
+            margin: 30px auto 0px;
             @include font-size(24px);
             line-height: 24px;
 
             &:after {
                 content: '';
-                width: 70px;
-                height: 70px;
+                width: 60px;
+                height: 60px;
                 top: 20px;
                 right: 30px;
             }
@@ -379,7 +379,7 @@
                 }
 
                 &:after {
-                    top: -40px;
+                    top: -30px;
                 }
             }
         }
@@ -388,7 +388,7 @@
 
 @include media-query(800px) {
     .ctaSec {
-        height: 400px;
+        // height: 400px;
 
         &::before {
             display: none;
@@ -412,15 +412,15 @@
 
         .btnChat {
             max-width: 300px;
-            height: 100px;
-            margin: 30px auto;
+            height: 80px;
+            margin: 30px auto 0px;
             @include font-size(22px);
             line-height: 22px;
 
             &:after {
                 content: '';
-                width: 50px;
-                height: 50px;
+                width: 40px;
+                height: 40px;
                 top: 20px;
                 right: 20px;
             }
@@ -466,16 +466,16 @@
         }
 
         .btnChat {
-            max-width: 300px;
-            height: 100px;
+            max-width: 260px;
+            height: 70px;
             margin: 30px auto;
             @include font-size(22px);
             line-height: 22px;
 
             &:after {
                 content: '';
-                width: 50px;
-                height: 50px;
+                width: 40px;
+                height: 40px;
                 top: 20px;
                 right: 20px;
             }
@@ -484,7 +484,7 @@
                 transition: width 0.3s ease-in-out;
 
                 &:before {
-                    width: 30px;
+                    width: 20px;
                 }
 
                 &:after {

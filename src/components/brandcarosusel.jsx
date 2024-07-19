@@ -10,7 +10,6 @@ import IMG03 from "media/home/brands/img03.png"
 import IMG04 from "media/home/brands/img04.png"
 import IMG05 from "media/home/brands/img05.png"
 import { CarouselArrow, PlayIcon } from '@/src/app/app-constants'
-
 const data = [
     {
         title: "@kyleecampbell",
