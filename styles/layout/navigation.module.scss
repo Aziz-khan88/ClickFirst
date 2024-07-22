@@ -43,7 +43,6 @@
 
                     svg {
 
-
                         path {
                             fill: $secondary-color;
                         }
@@ -86,9 +85,9 @@
                                 height: auto;
                                 margin-right: 10px;
 
-                                path {
-                                    fill: revert-layer;
-                                }
+                                // path {
+                                //     fill: revert-layer;
+                                // }
                             }
 
                             &:hover {
@@ -153,6 +152,7 @@
 @include media-query(1799px) {
     .mainMenu {
         ul {
+            height: 100px;
 
             li {
                 a {
@@ -181,6 +181,7 @@
 @include media-query(1599px) {
     .mainMenu {
         ul {
+            height: 80px;
 
             li {
                 a {
@@ -188,6 +189,11 @@
                     padding: 0px 15px;
                     line-height: 21px;
                 }
+
+                .subMenu {
+                    top: 80px
+                }
+
 
                 &:last-child {
                     a {
@@ -210,12 +216,17 @@
 @include media-query(1399px) {
     .mainMenu {
         ul {
+            height: 80px;
 
             li {
                 a {
                     @include font-size(14px);
                     padding: 0px 12px;
                     line-height: 21px;
+                }
+
+                .subMenu {
+                    top: 80px
                 }
 
                 &:last-child {
@@ -239,11 +250,35 @@
 @include media-query(1299px) {
     .mainMenu {
         ul {
+            height: 75px;
+
             li {
                 a {
                     @include font-size(13px);
                     padding: 0px 12px;
                     line-height: 20px;
+                }
+
+                .subMenu {
+                    top: 75px;
+
+                    .MenuListing {
+                        .MenuList {
+                            height: 45px;
+
+                            a {
+                                @include font-size(13px);
+
+                                svg {
+                                    width: 25px;
+                                }
+
+
+                            }
+
+
+                        }
+                    }
                 }
 
                 &:last-child {
@@ -267,11 +302,39 @@
 @include media-query(1100px) {
     .mainMenu {
         ul {
+            height: 70px;
+
             li {
                 a {
                     @include font-size(11px);
                     padding: 0px 10px;
                     line-height: 20px;
+
+                    svg {
+                        width: 12px;
+                    }
+                }
+
+                .subMenu {
+                    top: 70px;
+
+                    .MenuListing {
+                        .MenuList {
+                            height: 45px;
+
+                            a {
+                                @include font-size(13px);
+
+                                svg {
+                                    width: 25px;
+                                }
+
+
+                            }
+
+
+                        }
+                    }
                 }
 
                 &:last-child {
@@ -372,7 +435,8 @@
                                 align-items: center;
 
                                 a {
-                                    @include font-size(13px);
+                                    @include font-size(12px);
+                                    font-weight: 400;
 
                                     svg {
                                         width: 20px;

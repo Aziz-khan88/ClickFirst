@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import styles from "../../../styles/layout/navigation.module.scss"
-import { MenuIcon, SubMenuIcon } from '../app-constants'
+import { MenuIcon, ServicesIcon1, ServicesIcon2, ServicesIcon3, ServicesIcon4, ServicesIcon5, ServicesIcon6, SubMenuIcon } from '../app-constants'
 
 
 const Navigation = (props) => {
@@ -16,28 +16,25 @@ const Navigation = (props) => {
                     <div className={styles.subMenu} >
                         <div className={styles.MenuListing}>
                             <div className={styles.MenuList}>
-                                <Link href="#"><MenuIcon />Social Media Management</Link>
+                                <Link href="#"><ServicesIcon1 />Social Media Management</Link>
                             </div>
                             <div className={styles.MenuList}>
-                                <Link href="#"><MenuIcon />Social Media Marketing</Link>
+                                <Link href="#"><ServicesIcon2 />Search Engine Optimization</Link>
                             </div>
                             <div className={styles.MenuList}>
-                                <Link href="#"><MenuIcon />Instagram Marketing</Link>
+                                <Link href="#"><ServicesIcon3 />Influencer Marketing</Link>
                             </div>
                             <div className={styles.MenuList}>
-                                <Link href="#"><MenuIcon />ClickFirstSMM Tiktok Marketing</Link>
+                                <Link href="#"><ServicesIcon4 />Google Ads</Link>
                             </div>
                             <div className={styles.MenuList}>
-                                <Link href="#"><MenuIcon />Social Media Advertising</Link>
+                                <Link href="#"><ServicesIcon5 />Email Marketing</Link>
                             </div>
                             <div className={styles.MenuList}>
-                                <Link href="#"><MenuIcon />Facebook Marketing</Link>
+                                <Link href="#"><ServicesIcon6 />YouTube Optimization</Link>
                             </div>
                             <div className={styles.MenuList}>
-                                <Link href="#"><MenuIcon />Influencers Marketing</Link>
-                            </div>
-                            <div className={styles.MenuList}>
-                                <Link href="#"><MenuIcon /> Snapchat Marketing</Link>
+                                <Link href="#"><ServicesIcon6 />YouTube Monetization</Link>
                             </div>
                         </div>
                     </div>
