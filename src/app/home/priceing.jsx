@@ -13,8 +13,8 @@ const tabData = [
 
 const PricingData = [
     { starter: '350', pro: '650', elite: '950', valid: "Annually" },
-    { starter: '400', elite: '700', pro: '1000', valid: "Biannually" },
-    { starter: '600', elite: '900', pro: '1200', valid: "Quarterly" },
+    { starter: '400', pro: '700', elite: '1000', valid: "Biannually" },
+    { starter: '600', pro: '900', elite: '1200', valid: "Quarterly" },
 ]
 
 

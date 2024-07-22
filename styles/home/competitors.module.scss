@@ -78,6 +78,7 @@
             width: auto;
             margin: auto;
             display: block;
+            max-width: 60%;
         }
 
         .buttonClass {
@@ -90,6 +91,13 @@
 
 @include media-query(666px) {
     .competitorsSec {
+        img {
+            width: auto;
+            margin: 30px auto 0px;
+            display: block;
+            max-width: 90%;
+        }
+
         .buttonClass {
             @include button($primary-color, $white-color, $primary-color, 13px);
             border-radius: 5px;

@@ -5,63 +5,73 @@ import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import styles from "@/styles/components/brandslider.module.scss"
 import IMG01 from "media/home/brands/img01.png"
-import IMG02 from "media/home/brands/img02.png"
-import IMG03 from "media/home/brands/img03.png"
-import IMG04 from "media/home/brands/img04.png"
+import JulesJessica from "media/home/brands/img01.png"
+import ListingWithLexi from "media/home/brands/img01.png"
+import JaimeGabaldoni from "media/home/brands/img01.png"
 import IMG05 from "media/home/brands/img05.png"
 import { CarouselArrow, PlayIcon } from '@/src/app/app-constants'
 const data = [
     {
         title: "@kyleecampbell",
         img: IMG01.src,
-        videoUrl: "home/brands/@kyleecampbell.mp4"
+        videoUrl: "home/brands/video/@kyleecampbell.mp4"
     },
     {
-        title: "@_bysarv",
-        img: IMG02.src,
-        videoUrl: "home/test/video1.mp4"
+        title: "@julesjessica",
+        img: JulesJessica.src,
+        videoUrl: "home/brands/video/@julesjessica.mp4"
     }
     ,
     {
-        title: "@natalieoffduty",
-        img: IMG03.src,
-        videoUrl: "home/brands/@kyleecampbell.mp4"
+        title: "@ListingWithLexi",
+        img: ListingWithLexi.src,
+        videoUrl: "home/brands/video/@ListingWithLexi.mp4"
     },
     {
-        title: "@wrjght_",
-        img: IMG04.src,
-        videoUrl: "home/test/video1.mp4"
+        title: "@jaime_gabaldoni",
+        img: JaimeGabaldoni.src,
+        videoUrl: "home/brands/video/@jaime_gabaldoni.mp4"
     },
     {
-        title: "@karlieplace",
+        title: "@blissedhappiness",
         img: IMG05.src,
-        videoUrl: "home/brands/@kyleecampbell.mp4"
+        videoUrl: "home/brands/video/@blissedhappiness.mp4"
     },
     {
-        title: "@kyleecampbell",
+        title: "@pbadvancedaesthetics",
         img: IMG01.src,
-        videoUrl: "home/test/video1.mp4"
+        videoUrl: "home/brands/video/@pbadvancedaesthetics.mp4"
     },
     {
-        title: "@_bysarv",
-        img: IMG02.src,
-        videoUrl: "home/brands/@kyleecampbell.mp4"
+        title: "@odysseyelixir",
+        img: IMG01.src,
+        videoUrl: "home/brands/video/@odysseyelixir.mp4"
     }
     ,
     {
-        title: "@natalieoffduty",
-        img: IMG03.src,
-        videoUrl: "home/test/video1.mp4"
+        title: "@cece_barnes",
+        img: IMG01.src,
+        videoUrl: "home/brands/video/@cece_barnes.mp4"
     },
     {
-        title: "@wrjght_",
-        img: IMG04.src,
-        videoUrl: "home/brands/@kyleecampbell.mp4"
+        title: "@juliakhara",
+        img: IMG01.src,
+        videoUrl: "home/brands/video/@juliakhara.mp4"
     },
     {
-        title: "@karlieplace",
+        title: "@micheleonstyle",
         img: IMG05.src,
-        videoUrl: "home/test/video1.mp4"
+        videoUrl: "home/brands/video/@micheleonstyle.mp4"
+    },
+    {
+        title: "@micheleonstyle",
+        img: IMG05.src,
+        videoUrl: "home/brands/video/@micheleonstyle.mp4"
+    },
+    {
+        title: "@micheleonstyle",
+        img: IMG05.src,
+        videoUrl: "home/brands/video/@micheleonstyle.mp4"
     },
 
 ]

@@ -66,8 +66,7 @@
                         transition: height 0.3s ease-in-out;
                         transform: translateY(155px);
                         z-index: 1;
-
-
+                        height: 185px;
 
                         h4 {
                             color: $white-color;
@@ -157,6 +156,7 @@
 
                         .industriesText {
                             transform: translateY(155px);
+                            height: 180px;
 
                             a {
                                 @include font-size(15px);
@@ -185,6 +185,7 @@
 
                         .industriesText {
                             transform: translateY(145px);
+                            height: 175px;
 
                             a {
                                 @include font-size(14px);
@@ -212,6 +213,7 @@
 
                         .industriesText {
                             transform: translateY(140px);
+                            height: 170px;
 
                             a {
                                 @include font-size(14px);
@@ -240,6 +242,7 @@
 
                         .industriesText {
                             transform: translateY(135px);
+                            height: 155px;
 
                             a {
                                 @include font-size(13px);
@@ -267,6 +270,7 @@
 
                         .industriesText {
                             transform: translateY(145px);
+                            height: 165px;
 
                             a {
                                 @include font-size(13px);

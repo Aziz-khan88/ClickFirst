@@ -8,7 +8,7 @@ const PricingPlan = ({ data }) => {
             <div className={styles.priceBox}>
                 <div className={styles.priceHeader}>
                     <h5>Starter Plan</h5>
-                    <p>The perfect starter plan for your basic design needs.</p>
+                    <p>Get started with the basics and build your brand.</p>
                 </div>
                 <div className={styles.priceBody}>
                     <div className={styles.priceNumber}>
@@ -44,15 +44,15 @@ const PricingPlan = ({ data }) => {
                         <ul>
                             <li><div><ArrowPriceIcon /></div>01 Dedicated Social Media Copywriter</li>
                             <li><div><ArrowPriceIcon /></div>01 Dedicated Graphic Designer</li>
-                            <li><div><ArrowPriceIcon /></div>01 Video Editor</li>
+                            <li><div><ArrowPriceIcon /></div>01 Dedicated Video Editor</li>
                             <li><div><ArrowPriceIcon /></div>01 Dedicated Ads Expert</li>
                             <li><div><ArrowPriceIcon /></div>01 Dedicated Project Manager</li>
                         </ul>
-                        <h6>Social Ads Management </h6>
+                        <h6>Social Media Management</h6>
                         <ul>
                             <li><div><ArrowPriceIcon /></div>Monthly Social Posts Scheduling</li>
-                            <li><div><ArrowPriceIcon /></div>Social Community Management</li>
-                            <li><div><ArrowPriceIcon /></div>Social Page Optimization</li>
+                            <li><div><ArrowPriceIcon /></div>Social Community Management (Inbox Messages + Comment Responses)</li>
+                            <li><div><ArrowPriceIcon /></div>Social Page Optimization (Cover Photo, About Section, Display Picture and Interlinking)</li>
                             <li><div><ArrowPriceIcon /></div>Meta Business Manager Setup</li>
                             <li><div><ArrowPriceIcon /></div>Meta Ads Manager Setup</li>
                             <li><div><ArrowPriceIcon /></div>Meta Pixel Integration</li>
@@ -67,11 +67,10 @@ const PricingPlan = ({ data }) => {
                 </div>
             </div>
 
-            <div className={styles.priceBox}>
+            <div className={`${styles.priceBox} ${styles.active}`}>
                 <div className={styles.priceHeader}>
                     <h5>Pro Plan</h5>
-                    <p>The perfect pro plan for your
-                        basic design needs.</p>
+                    <p>Maximize your reach with our most popular plan.</p>
                 </div>
                 <div className={styles.priceBody}>
                     <div className={styles.priceNumber}>
@@ -107,16 +106,16 @@ const PricingPlan = ({ data }) => {
                         <ul>
                             <li><div><ArrowPriceIcon /></div>02 Dedicated Social Media Copywriters</li>
                             <li><div><ArrowPriceIcon /></div>02 Dedicated Graphic Designers</li>
-                            <li><div><ArrowPriceIcon /></div>02 Video Editors</li>
+                            <li><div><ArrowPriceIcon /></div>02 Dedicated Video Editors</li>
                             <li><div><ArrowPriceIcon /></div>02 Dedicated Ads Experts</li>
                             <li><div><ArrowPriceIcon /></div>01 Message/Chat Expert</li>
                             <li><div><ArrowPriceIcon /></div>01 Dedicated Project Manager</li>
                         </ul>
-                        <h6>Social Ads Management </h6>
+                        <h6>Social Media Management</h6>
                         <ul>
                             <li><div><ArrowPriceIcon /></div>Monthly Social Posts Scheduling</li>
-                            <li><div><ArrowPriceIcon /></div>Social Community Management</li>
-                            <li><div><ArrowPriceIcon /></div>Social Page Optimization</li>
+                            <li><div><ArrowPriceIcon /></div>Social Community Management (Inbox Messages + Comment Responses)</li>
+                            <li><div><ArrowPriceIcon /></div>Social Page Optimization (Cover Photo, About Section, Display Picture and Interlinking)</li>
                             <li><div><ArrowPriceIcon /></div>Meta Business Manager Setup</li>
                             <li><div><ArrowPriceIcon /></div>Meta Ads Manager Setup</li>
                             <li><div><ArrowPriceIcon /></div>Meta Pixel Integration</li>
@@ -138,8 +137,7 @@ const PricingPlan = ({ data }) => {
             <div className={styles.priceBox}>
                 <div className={styles.priceHeader}>
                     <h5>Elite Plan</h5>
-                    <p>The perfect elite plan for your
-                        basic design needs.</p>
+                    <p>Unlock premium features for ultimate growth.</p>
                 </div>
                 <div className={styles.priceBody}>
                     <div className={styles.priceNumber}>
@@ -186,11 +184,11 @@ const PricingPlan = ({ data }) => {
                             <li><div><ArrowPriceIcon /></div>01 Dedicated Project Manager</li>
                         </ul>
 
-                        <h6>Social Medai Management</h6>
+                        <h6>Social Media Management</h6>
                         <ul>
                             <li><div><ArrowPriceIcon /></div>Monthly Social Posts Scheduling</li>
-                            <li><div><ArrowPriceIcon /></div>Social Community Management </li>
-                            <li><div><ArrowPriceIcon /></div>Social Page Optimization</li>
+                            <li><div><ArrowPriceIcon /></div>Social Community Management (Inbox Messages + Comment Responses)</li>
+                            <li><div><ArrowPriceIcon /></div>Social Page Optimization (Cover Photo, About Section, Display Picture and Interlinking)</li>
                             <li><div><ArrowPriceIcon /></div>Meta Business Manager Setup </li>
                             <li><div><ArrowPriceIcon /></div>Meta Ads Manager Setup</li>
                             <li><div><ArrowPriceIcon /></div>Meta Pixel Integration</li>

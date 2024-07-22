@@ -21,18 +21,17 @@
             width: 200px;
             height: 60px;
             background: #F5F5F5;
-            border-radius: 5px;
+            border-radius: 15px;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             @include font-size(20px);
             color: $black-color;
-            font-weight: 500;
+            font-weight: 600;
             cursor: pointer;
             transition: background-color 0.3s ease-in-out;
             text-transform: uppercase;
-            box-shadow: 0 1px 10px 0 #0000009a;
 
             span {
                 display: block;
@@ -41,10 +40,10 @@
             }
 
             &.active {
-                background: $primary-color;
+                background: rgb(57, 106, 252);
+                background: linear-gradient(180deg, rgba(57, 106, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
                 color: $white-color;
                 transition: background-color 0.3s ease-in-out;
-                box-shadow: 0 1px 23px 0 #0000009a;
 
                 span {
                     color: $white-color;

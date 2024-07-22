@@ -17,13 +17,9 @@
         height: 900px;
         color: $black-color;
         position: relative;
-        box-shadow: 0 1px 10px 0 #0000009a;
-        transition: all 0.3s ease;
-
-        &:hover {
-            box-shadow: 0 1px 23px 0 #0000009a;
-            transition: all 0.3s ease;
-        }
+        -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
 
         .priceHeader {
             text-align: center;
@@ -32,12 +28,12 @@
             margin-bottom: 30px;
 
             h5 {
-                @include font-size(32px);
+                @include font-size(24px);
                 line-height: 35px;
                 font-weight: 600;
                 margin-bottom: 10px;
                 text-transform: uppercase;
-                color: $primary-color;
+                color: $black-color;
             }
 
             p {
@@ -114,7 +110,8 @@
                         display: flex;
                         justify-content: start;
                         align-items: center;
-                        @include font-size(16px);
+                        @include font-size(15px);
+                        line-height: 25px;
 
                         span {
                             padding-left: 20px;
@@ -134,7 +131,7 @@
                     @include button($primary-color, $white-color, $primary-color, 16px);
                     margin: 50px auto 0px;
                     border-radius: 5px;
-                    @include gradient-background(90deg, rgba(57, 106, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
+                    background: linear-gradient(180deg, rgba(57, 106, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
                     border: 0px;
 
                     &:hover {
@@ -183,9 +180,11 @@
             }
         }
 
-        &:nth-child(2) {
-            // background: $primary-color;
-            // color: $white-color;
+        &.active {
+            background: rgb(57, 106, 252);
+            background: linear-gradient(180deg, rgba(57, 106, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
+            color: $white-color;
+            border-color: #396AFC;
 
             &::after {
                 content: '';
@@ -202,44 +201,48 @@
             }
 
 
-            // .priceHeader {
-            //     border-color: $white-color;
+            .priceHeader {
+                border-color: $secondary-color;
 
-            //     p {
-            //         color: $white-color;
-            //     }
-            // }
+                h5 {
+                    color: $white-color;
+                }
 
-            // svg {
-            //     path {
-            //         fill: $white-color;
-            //     }
-            // }
+                p {
+                    color: $white-color;
+                }
+            }
 
-            // .pricePoints {
+            svg {
+                path {
+                    fill: $white-color;
+                }
+            }
 
-            //     &::-webkit-scrollbar-thumb {
-            //         background-color: #9A9A9A;
-            //         outline: 1px solid #9A9A9A;
-            //         border-radius: 4px;
-            //     }
-            // }
+            .pricePoints {
 
-            // .priceButton {
-            //     .contactBtn {
-            //         @include button($white-color, $primary-color, $primary-color, 16px);
-            //         margin: 50px auto 0px;
-            //         border-radius: 5px;
-            //         @include gradient-background(90deg, $white-color 0%, $white-color 100%);
-            //         border: 0px;
+                &::-webkit-scrollbar-thumb {
+                    background-color: #9A9A9A;
+                    outline: 1px solid #9A9A9A;
+                    border-radius: 4px;
+                }
+            }
 
-            //         &:hover {
-            //             background: $secondary-color;
-            //             border: 0px;
-            //             color: $white-color;
-            //         }
-            //     }
-            // }
+            .priceButton {
+                .contactBtn {
+                    @include button($white-color, $primary-color, $primary-color, 16px);
+                    margin: 50px auto 0px;
+                    border-radius: 5px;
+                    @include gradient-background(90deg, $white-color 0%, $white-color 100%);
+                    border: 0px;
+
+                    &:hover {
+                        background: $secondary-color;
+                        border: 0px;
+                        color: $white-color;
+                    }
+                }
+            }
         }
     }
 }
@@ -259,8 +262,8 @@
                 margin-bottom: 30px;
 
                 h5 {
-                    @include font-size(28px);
-                    line-height: 35px;
+                    @include font-size(24px);
+                    line-height: 32px;
                 }
             }
 
@@ -381,7 +384,7 @@
                 margin-bottom: 25px;
 
                 h5 {
-                    @include font-size(26px);
+                    @include font-size(24px);
                     line-height: 32px;
                 }
             }
@@ -504,7 +507,7 @@
                 margin-bottom: 25px;
 
                 h5 {
-                    @include font-size(26px);
+                    @include font-size(24px);
                     line-height: 32px;
 
                 }
