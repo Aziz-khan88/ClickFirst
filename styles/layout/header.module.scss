@@ -20,6 +20,7 @@
         position: fixed;
         top: 0;
         background-color: $primary-color;
+        background: linear-gradient(180deg, rgba(56, 104, 252, 1) 0%, rgba(41, 72, 255, 1) 100%);
         animation: slideFromTop 0.5s forwards;
     }
 
