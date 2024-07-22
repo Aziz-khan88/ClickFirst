@@ -12,6 +12,7 @@ import Industries from '@/src/app/home/industries';
 import Priceing from '@/src/app/home/priceing';
 import Testimonials from './home/testimonials';
 import CtaComp from '../components/cta';
+import CtaPackage from './home/ctapackage';
 
 export const metadata = {
   title: "Home Page | Click First",
@@ -33,6 +34,7 @@ export default function Home() {
       <Creation />
       <Industries />
       <Priceing />
+      <CtaPackage />
       <Testimonials />
       <CtaComp />
     </>

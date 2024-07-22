@@ -15,18 +15,18 @@ const TestimonilSlider = (props) => {
     const [modalShow, setModalShow] = useState(false);
     const [videoUrl, setvideoUrl] = useState("");
 
-    useEffect(() => {
-        if (!embla) return;
+    // useEffect(() => {
+    //     if (!embla) return;
 
-        const updateButtons = () => {
-            setIsPrevDisabled(!embla.canScrollPrev());
-            setIsNextDisabled(!embla.canScrollNext());
-        };
+    //     const updateButtons = () => {
+    //         setIsPrevDisabled(!embla.canScrollPrev());
+    //         setIsNextDisabled(!embla.canScrollNext());
+    //     };
 
-        embla.on('select', updateButtons);
+    //     embla.on('select', updateButtons);
 
-        return () => embla.off('select', updateButtons);
-    }, [embla]);
+    //     return () => embla.off('select', updateButtons);
+    // }, [embla]);
 
     const handleSlideClick = (videoUrl) => {
         setModalShow(true);

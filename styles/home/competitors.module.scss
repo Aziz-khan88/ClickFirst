@@ -26,6 +26,7 @@
 
     p {
         text-align: justify;
+        padding-right: 30px;
     }
 
     .buttonClass {
@@ -55,6 +56,10 @@
 
 @include media-query(1299px) {
     .competitorsSec {
+        p {
+            padding-right: 15px;
+        }
+
         .buttonClass {
             @include button($primary-color, $white-color, $primary-color, 15px);
             border-radius: 5px;
@@ -65,6 +70,10 @@
 
 @include media-query(1100px) {
     .competitorsSec {
+        p {
+            padding-right: 0px;
+        }
+
         .buttonClass {
             @include button($primary-color, $white-color, $primary-color, 14px);
             border-radius: 5px;
@@ -74,6 +83,8 @@
 
 @include media-query(800px) {
     .competitorsSec {
+
+
         img {
             width: auto;
             margin: auto;

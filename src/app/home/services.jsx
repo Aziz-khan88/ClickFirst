@@ -48,7 +48,7 @@ const Services = () => {
             <Container>
                 <Row>
                     <Col xl={8} lg={10} className="m-auto text-center">
-                        <h2>What <span>Marketing Opportunities</span> We Bring To Your Easy Disposal?</h2>
+                        <h2>What <span>Marketing Opportunities</span> We Bring To Your Disposal?</h2>
                     </Col>
                 </Row>
                 <Row>
