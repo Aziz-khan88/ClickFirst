@@ -17,7 +17,7 @@ const CtaPackage = () => {
                             </div>
 
                             <div className={styles.ctaMain}>
-                                <h2>Want a <span>Customized Package</span>
+                                <h2>Want a <span>Customized Package </span>
                                     Tailored Just for You?</h2>
                                 <div className={styles.btnFlex}>
                                     <div className={styles.btnOne}>
