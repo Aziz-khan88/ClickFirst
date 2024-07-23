@@ -19,13 +19,6 @@ const Brand = () => {
         setActiveVideoUrl(videoUrl);
     };
 
-    // useEffect(() => {
-    //     if (videoRef.current) {
-    //         videoRef.current.load();
-    //         videoRef.current.play();
-    //     }
-    // }, [activevideoUrl]);
-
     useEffect(() => {
         const videoElement = videoRef.current;
 

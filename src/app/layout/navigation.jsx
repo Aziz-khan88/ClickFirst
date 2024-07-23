@@ -1,11 +1,12 @@
 import Link from 'next/link'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from "../../../styles/layout/navigation.module.scss"
 import { NavIcon, ServicesIcon1, ServicesIcon2, ServicesIcon3, ServicesIcon4, ServicesIcon5, ServicesIcon6, SubMenuIcon } from '../app-constants'
 
 
 const Navigation = (props) => {
     const [isActive, setIsActive] = useState(false);
+    const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 900);
     const handleClick = () => {
         setIsActive(!isActive);
         if (!isActive) {
@@ -14,6 +15,27 @@ const Navigation = (props) => {
             document.body.classList.remove('active');
         }
     };
+
+    const handleClosed = () => {
+        setIsActive(false);
+        document.body.classList.remove('active');
+    };
+
+    const checkScreenSize = () => {
+        const isMobile = window.innerWidth <= 900;
+        setIsMobileView(isMobile);
+        if (!isMobile && isActive) {
+            handleClosed();
+        }
+    };
+
+    useEffect(() => {
+        checkScreenSize();
+        window.addEventListener('resize', checkScreenSize);
+        return () => window.removeEventListener('resize', checkScreenSize);
+    }, [isActive]);
+
+
     return (
         <>
             <div onClick={handleClick}
@@ -29,25 +51,25 @@ const Navigation = (props) => {
                         <Link href="#" >Services <SubMenuIcon /></Link>
                         <div className={styles.subMenu} >
                             <div className={styles.MenuListing}>
-                                <div className={styles.MenuList} onClick={handleClick}>
+                                <div className={styles.MenuList} onClick={isMobileView ? handleClosed : undefined}>
                                     <Link href="#"><ServicesIcon1 />Social Media Management</Link>
                                 </div>
-                                <div className={styles.MenuList} onClick={handleClick}>
+                                <div className={styles.MenuList} onClick={isMobileView ? handleClosed : undefined}>
                                     <Link href="#"><ServicesIcon2 />Search Engine Optimization</Link>
                                 </div>
-                                <div className={styles.MenuList} onClick={handleClick}>
+                                <div className={styles.MenuList} onClick={isMobileView ? handleClosed : undefined}>
                                     <Link href="#"><ServicesIcon3 />Influencer Marketing</Link>
                                 </div>
-                                <div className={styles.MenuList} onClick={handleClick}>
+                                <div className={styles.MenuList} onClick={isMobileView ? handleClosed : undefined}>
                                     <Link href="#"><ServicesIcon4 />Google Ads</Link>
                                 </div>
-                                <div className={styles.MenuList} onClick={handleClick}>
+                                <div className={styles.MenuList} onClick={isMobileView ? handleClosed : undefined}>
                                     <Link href="#"><ServicesIcon5 />Email Marketing</Link>
                                 </div>
-                                <div className={styles.MenuList} onClick={handleClick}>
+                                <div className={styles.MenuList} onClick={isMobileView ? handleClosed : undefined}>
                                     <Link href="#"><ServicesIcon6 />YouTube Optimization</Link>
                                 </div>
-                                <div className={styles.MenuList} onClick={handleClick}>
+                                <div className={styles.MenuList} onClick={isMobileView ? handleClosed : undefined}>
                                     <Link href="#"><ServicesIcon6 />YouTube Monetization</Link>
                                 </div>
                             </div>
