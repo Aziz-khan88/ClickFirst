@@ -135,7 +135,7 @@
                     border: 0px;
 
                     &:hover {
-                        background: $secondary-color;
+                        background: $black-color;
                         border: 0px;
                     }
                 }
@@ -327,6 +327,7 @@
                         border: 0px;
 
                         &:hover {
+                            background: $black-color;
                             border: 0px;
                         }
                     }
@@ -425,7 +426,7 @@
                 }
 
                 .pricePoints {
-                    height: 350px;
+                    height: 330px;
                     padding: 0px 20px;
 
                     &::-webkit-scrollbar {
@@ -463,6 +464,7 @@
                         border: 0px;
 
                         &:hover {
+                            background: $black-color;
                             border: 0px;
                         }
                     }
@@ -609,6 +611,7 @@
                         border: 0px;
 
                         &:hover {
+                            background: $black-color;
                             border: 0px;
                         }
                     }
@@ -751,6 +754,7 @@
                         border: 0px;
 
                         &:hover {
+                            background: $black-color;
                             border: 0px;
                         }
                     }
@@ -805,7 +809,7 @@
     }
 }
 
-@include media-query(1100px) {
+@include media-query(1199px) {
     .priceContainer {
         margin-top: 50px;
 
@@ -893,6 +897,7 @@
                         border: 0px;
 
                         &:hover {
+                            background: $black-color;
                             border: 0px;
                         }
                     }
@@ -947,7 +952,7 @@
     }
 }
 
-@include media-query(800px) {
+@include media-query(900px) {
     .priceContainer {
         margin-top: 50px;
         // flex-direction: column;
@@ -1037,6 +1042,7 @@
                         border: 0px;
 
                         &:hover {
+                            background: $black-color;
                             border: 0px;
                         }
                     }
@@ -1090,7 +1096,6 @@
         }
     }
 }
-
 
 @include media-query(666px) {
     .priceContainer {
@@ -1177,6 +1182,7 @@
                         border: 0px;
 
                         &:hover {
+                            background: $black-color;
                             border: 0px;
                         }
                     }

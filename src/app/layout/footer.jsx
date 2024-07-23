@@ -64,6 +64,7 @@ const Footer = () => {
                                         <li><Link href="#">Google Ads</Link></li>
                                         <li><Link href="#">Email Marketing</Link></li>
                                         <li><Link href="#">YouTube Optimization</Link></li>
+                                        <li><Link href="#">YouTube Monetization</Link></li>
                                     </ul>
                                 </div>
                             </div>

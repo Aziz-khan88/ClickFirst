@@ -492,7 +492,7 @@
     }
 }
 
-@include media-query(1100px) {
+@include media-query(1199px) {
     .footerSec {
         @include padding(50px, 0px, 30px, 0px);
 
@@ -579,7 +579,7 @@
     }
 }
 
-@include media-query(800px) {
+@include media-query(900px) {
     .footerSec {
         @include padding(50px, 0px, 30px, 0px);
 

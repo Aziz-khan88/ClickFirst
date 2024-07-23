@@ -28,7 +28,7 @@
     }
 }
 
-@include media-query(1100px) {
+@include media-query(1199px) {
     .testimonialSec {
         .buttonClass {
             @include button($primary-color, $white-color, $primary-color, 14px);
@@ -37,7 +37,7 @@
     }
 }
 
-@include media-query(800px) {
+@include media-query(900px) {
     .testimonialSec {
         .buttonClass {
             @include button($primary-color, $white-color, $primary-color, 14px);

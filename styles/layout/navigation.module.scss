@@ -299,7 +299,7 @@
     }
 }
 
-@include media-query(1100px) {
+@include media-query(1199px) {
     .mainMenu {
         ul {
             height: 70px;
@@ -323,10 +323,10 @@
                             height: 45px;
 
                             a {
-                                @include font-size(13px);
+                                @include font-size(12px);
 
                                 svg {
-                                    width: 25px;
+                                    width: 22px;
                                 }
 
 
