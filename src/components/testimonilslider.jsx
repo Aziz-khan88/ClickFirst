@@ -43,7 +43,11 @@ const TestimonilSlider = (props) => {
                             <div className={styles.testimonialBox} style={{ backgroundImage: `url(${item.img})` }}>
                                 <div className={styles.itemMain}>
                                     <div className={styles.itemText}>
-                                        {item.name}<span>{item.position}</span>
+                                        {item?.name}
+                                        {item?.position ?
+                                            <span>{item?.position}</span>
+                                            : ''
+                                        }
                                     </div>
                                     <div className={styles.playBtn} onClick={() => handleSlideClick(item.videoUrl)}><PlayButton /></div>
                                 </div>

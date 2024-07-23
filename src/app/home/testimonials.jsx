@@ -11,21 +11,21 @@ import Link from 'next/link'
 const OPTIONS = { align: 'start', loop: false }
 const SLIDES = [
     {
-        name: "Mustafa Sharif",
-        position: "Marketania",
+        name: "Heyman",
+        position: "",
         videoUrl: "/home/test/video1.mp4",
         img: IMG01.src
 
     }, {
-        name: "Mustafa Sharif",
-        position: "Marketania",
+        name: "Ralph",
+        position: "",
         videoUrl: "/home/test/video2.mp4",
         img: IMG02.src
 
     }
     , {
-        name: "Mustafa Sharif",
-        position: "Marketania",
+        name: "Jean Gilford",
+        position: "",
         videoUrl: "/home/test/video3.mp4",
         img: IMG03.src
 
