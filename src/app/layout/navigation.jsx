@@ -6,7 +6,26 @@ import { NavIcon, ServicesIcon1, ServicesIcon2, ServicesIcon3, ServicesIcon4, Se
 
 const Navigation = (props) => {
     const [isActive, setIsActive] = useState(false);
-    const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 900);
+    const [isMobileView, setIsMobileView] = useState(false);
+
+    useEffect(() => {
+        // Check screen size on mount
+        const checkScreenSize = () => {
+            if (typeof window !== 'undefined') {
+                const isMobile = window.innerWidth <= 800;
+                setIsMobileView(isMobile);
+                if (!isMobile && isActive) {
+                    // Close menu if it's active and screen width is greater than 800px
+                    handleClosed();
+                }
+            }
+        };
+
+        checkScreenSize();
+        window.addEventListener('resize', checkScreenSize);
+        return () => window.removeEventListener('resize', checkScreenSize);
+    }, [isActive]);
+
     const handleClick = () => {
         setIsActive(!isActive);
         if (!isActive) {
@@ -20,20 +39,6 @@ const Navigation = (props) => {
         setIsActive(false);
         document.body.classList.remove('active');
     };
-
-    const checkScreenSize = () => {
-        const isMobile = window.innerWidth <= 900;
-        setIsMobileView(isMobile);
-        if (!isMobile && isActive) {
-            handleClosed();
-        }
-    };
-
-    useEffect(() => {
-        checkScreenSize();
-        window.addEventListener('resize', checkScreenSize);
-        return () => window.removeEventListener('resize', checkScreenSize);
-    }, [isActive]);
 
 
     return (
