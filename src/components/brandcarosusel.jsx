@@ -4,24 +4,27 @@ import { React, useState, useEffect, useCallback } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import styles from "@/styles/components/brandslider.module.scss"
-import IMG01 from "media/home/brands/img01.png"
-import JulesJessica from "media/home/brands/img01.png"
-import ListingWithLexi from "media/home/brands/img01.png"
-import JaimeGabaldoni from "media/home/brands/img01.png"
-import IMG05 from "media/home/brands/img05.png"
+import KyleecampBell from "media/home/brands/@kyleecampbell.png"
+import JulesJessica from "media/home/brands/@julesjessica.png"
+import ListingWithLexi from "media/home/brands/@ListingWithLexi.png"
+import JaimeGabaldoni from "media/home/brands/@jaime_gabaldoni.png"
+import BlissedHappiness from "media/home/brands/@blissedhappiness.png"
+import PbadvanceDaeshetics from "media/home/brands/@pbadvancedaesthetics.png"
+import OdyssEyeLixir from "media/home/brands/@odysseyelixir.png"
+import Cece_Barnes from "media/home/brands/@cece_barnes.png"
+import JuliAkhara from "media/home/brands/@juliakhara.png"
 import { CarouselArrow, PlayIcon } from '@/src/app/app-constants'
 const data = [
     {
         title: "@kyleecampbell",
-        img: IMG01.src,
+        img: KyleecampBell.src,
         videoUrl: "home/brands/video/@kyleecampbell.mp4"
     },
     {
         title: "@julesjessica",
         img: JulesJessica.src,
         videoUrl: "home/brands/video/@julesjessica.mp4"
-    }
-    ,
+    },
     {
         title: "@ListingWithLexi",
         img: ListingWithLexi.src,
@@ -34,46 +37,29 @@ const data = [
     },
     {
         title: "@blissedhappiness",
-        img: IMG05.src,
+        img: BlissedHappiness.src,
         videoUrl: "home/brands/video/@blissedhappiness.mp4"
     },
     {
         title: "@pbadvancedaesthetics",
-        img: IMG01.src,
+        img: PbadvanceDaeshetics.src,
         videoUrl: "home/brands/video/@pbadvancedaesthetics.mp4"
     },
     {
         title: "@odysseyelixir",
-        img: IMG01.src,
+        img: OdyssEyeLixir.src,
         videoUrl: "home/brands/video/@odysseyelixir.mp4"
-    }
-    ,
+    },
     {
         title: "@cece_barnes",
-        img: IMG01.src,
+        img: Cece_Barnes.src,
         videoUrl: "home/brands/video/@cece_barnes.mp4"
     },
     {
         title: "@juliakhara",
-        img: IMG01.src,
+        img: JuliAkhara.src,
         videoUrl: "home/brands/video/@juliakhara.mp4"
     },
-    {
-        title: "@micheleonstyle",
-        img: IMG05.src,
-        videoUrl: "home/brands/video/@micheleonstyle.mp4"
-    },
-    {
-        title: "@micheleonstyle",
-        img: IMG05.src,
-        videoUrl: "home/brands/video/@micheleonstyle.mp4"
-    },
-    {
-        title: "@micheleonstyle",
-        img: IMG05.src,
-        videoUrl: "home/brands/video/@micheleonstyle.mp4"
-    },
-
 ]
 
 const BrandCarousel = ({ onVideoSelect }) => {

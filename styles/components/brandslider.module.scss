@@ -26,6 +26,9 @@
                     overflow: hidden;
                     border-radius: 10px;
                     cursor: pointer;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: 100%;
 
                     .itemName {
                         height: 26px;

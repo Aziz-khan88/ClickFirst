@@ -21,8 +21,7 @@ const Competitors = () => {
                         <Link href="#" className={styles.buttonClass}>Get a Free Quote</Link>
                     </Col>
                     <Col xl={6} lg={6} className="my-auto">
-                        <Image src={CompetitorsImg} alt="Click-First" width={796}
-                            height={772} />
+                        <Image src={CompetitorsImg} alt="Click-First" />
                     </Col>
                 </Row>
             </Container>

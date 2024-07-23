@@ -8,7 +8,7 @@ import Navigation from './navigation'
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
-    const [isActive, setIsActive] = useState(false);
+
 
     useEffect(() => {
         const handleScroll = () => {
@@ -21,14 +21,7 @@ const Header = () => {
         };
     }, []);
 
-    const handleClick = () => {
-        setIsActive(!isActive);
-        if (!isActive) {
-            document.body.classList.add('active');
-        } else {
-            document.body.classList.remove('active');
-        }
-    };
+
     return (
         <section className={`${styles.headerMain} ${scrolled ? styles.active : ''}`}>
             <Container className="h-100">
@@ -41,11 +34,8 @@ const Header = () => {
                         </div>
                     </Col>
                     <Col xxl={9} xl={9} lg={9} md={6} xs={6} className="my-auto">
-                        <div onClick={handleClick}
-                            className={`${isActive ? 'navIcon active' : 'navIcon'}`}>
-                            <NavIcon />
-                        </div>
-                        <Navigation isActive={isActive} />
+
+                        <Navigation />
                     </Col>
                 </Row>
             </Container>

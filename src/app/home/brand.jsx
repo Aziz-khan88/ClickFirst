@@ -9,40 +9,44 @@ import Facebook from 'media/home/brands/icons/facebook.png'
 import Instagram from 'media/home/brands/icons/instagram.png'
 import Tiktok from 'media/home/brands/icons/tiktok.png'
 import Image from "next/image";
-import VideoModal from "@/src/components/videomodal";
 
 
 const Brand = () => {
     const [activevideoUrl, setActiveVideoUrl] = useState("");
-    // const [modalShow, setModalShow] = useState(false);
-    // const [isMobile, setIsMobile] = useState(false);
     const videoRef = useRef(null);
 
     const handleVideoSelect = (videoUrl) => {
         setActiveVideoUrl(videoUrl);
     };
 
+    // useEffect(() => {
+    //     if (videoRef.current) {
+    //         videoRef.current.load();
+    //         videoRef.current.play();
+    //     }
+    // }, [activevideoUrl]);
+
     useEffect(() => {
-        if (videoRef.current) {
-            videoRef.current.load();
-            videoRef.current.play();
+        const videoElement = videoRef.current;
+
+        if (videoElement) {
+            const handleLoadedData = () => {
+                videoElement.play();
+            };
+
+            videoElement.pause();
+            videoElement.src = activevideoUrl;
+            videoElement.load();
+            videoElement.addEventListener('loadeddata', handleLoadedData);
+
+            return () => {
+                videoElement.removeEventListener('loadeddata', handleLoadedData);
+            };
         }
     }, [activevideoUrl]);
 
-    // const checkScreenSize = () => {
-    //     if (window.innerWidth <= 800) {
-    //         setIsMobile(true);
-    //     } else {
-    //         setIsMobile(false);
-    //         setModalShow(false);
-    //     }
-    // };
 
-    // useEffect(() => {
-    //     checkScreenSize();
-    //     window.addEventListener('resize', checkScreenSize);
-    //     return () => window.removeEventListener('resize', checkScreenSize);
-    // }, []);
+
 
     return (
         <section className={`ptb-100 ${styles.BrandSec}`}>
