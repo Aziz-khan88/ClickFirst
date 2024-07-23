@@ -4,15 +4,15 @@ import { React, useState, useEffect, useCallback } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import styles from "@/styles/components/brandslider.module.scss"
-import KyleecampBell from "media/home/brands/@kyleecampbell.png"
-import JulesJessica from "media/home/brands/@julesjessica.png"
-import ListingWithLexi from "media/home/brands/@ListingWithLexi.png"
-import JaimeGabaldoni from "media/home/brands/@jaime_gabaldoni.png"
-import BlissedHappiness from "media/home/brands/@blissedhappiness.png"
-import PbadvanceDaeshetics from "media/home/brands/@pbadvancedaesthetics.png"
-import OdyssEyeLixir from "media/home/brands/@odysseyelixir.png"
-import Cece_Barnes from "media/home/brands/@cece_barnes.png"
-import JuliAkhara from "media/home/brands/@juliakhara.png"
+import KyleecampBell from "media/home/brands/@kyleecampbell.webp"
+import JulesJessica from "media/home/brands/@julesjessica.webp"
+import ListingWithLexi from "media/home/brands/@ListingWithLexi.webp"
+import JaimeGabaldoni from "media/home/brands/@jaime_gabaldoni.webp"
+import BlissedHappiness from "media/home/brands/@blissedhappiness.webp"
+import PbadvanceDaeshetics from "media/home/brands/@pbadvancedaesthetics.webp"
+import OdyssEyeLixir from "media/home/brands/@odysseyelixir.webp"
+import Cece_Barnes from "media/home/brands/@cece_barnes.webp"
+import JuliAkhara from "media/home/brands/@juliakhara.webp"
 import { CarouselArrow, PlayIcon } from '@/src/app/app-constants'
 const data = [
     {

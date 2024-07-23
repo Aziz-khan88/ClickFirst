@@ -17,27 +17,27 @@ const Footer = () => {
                             </div>
                             <ul className={styles.footerIcons}>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.facebook.com/clickfirstsmm" target="_blank">
                                         <FooterFacebookLogo />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="https://twitter.com/clickfirstsmm" target="_blank">
                                         <FooterTwitterLogo />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.linkedin.com/company/clickfirst-smm" target="_blank">
                                         <FooterLinkedinLogo />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank" className={styles.instagram}>
+                                    <a href="https://www.instagram.com/clickfirstsmm" target="_blank" className={styles.instagram}>
                                         <FooterInstagramLogo />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.youtube.com/@clickfirstsmm" target="_blank">
                                         <FooterYoutubeLogo />
                                     </a>
                                 </li>

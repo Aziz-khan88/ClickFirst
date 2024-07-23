@@ -2,9 +2,9 @@
 import { Container, Row, Col } from 'react-bootstrap'
 import styles from "@/styles/home/testimonials.module.scss"
 import TestimonilSlider from '@/src/components/testimonilslider'
-import IMG01 from "media/home/test/test01.png"
-import IMG02 from "media/home/test/test02.png"
-import IMG03 from "media/home/test/test03.png"
+import IMG01 from "media/home/test/test01.webp"
+import IMG02 from "media/home/test/test02.webp"
+import IMG03 from "media/home/test/test03.webp"
 import Link from 'next/link'
 
 

@@ -4,10 +4,10 @@ import styles from "@/styles/home/brand.module.scss";
 import Link from "next/link";
 import BrandCarousel from "@/src/components/brandcarosusel";
 import { useState, useEffect, useRef } from "react";
-import Youtube from 'media/home/brands/icons/youtube.png'
-import Facebook from 'media/home/brands/icons/facebook.png'
-import Instagram from 'media/home/brands/icons/instagram.png'
-import Tiktok from 'media/home/brands/icons/tiktok.png'
+import Youtube from 'media/home/brands/icons/youtube.webp'
+import Facebook from 'media/home/brands/icons/facebook.webp'
+import Instagram from 'media/home/brands/icons/instagram.webp'
+import Tiktok from 'media/home/brands/icons/tiktok.webp'
 import Image from "next/image";
 
 

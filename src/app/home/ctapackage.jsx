@@ -2,7 +2,7 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import styles from "@/styles/components/ctapackage.module.scss"
 import Image from 'next/image'
-import IMG from 'media/home/imgCta.png'
+import IMG from 'media/home/imgCta.webp'
 
 const CtaPackage = () => {
     return (

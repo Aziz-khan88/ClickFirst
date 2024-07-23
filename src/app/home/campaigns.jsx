@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap"
 import styles from "@/styles/home/campaigns.module.scss"
 import Image from "next/image"
-import CampaignsImg from "media/home/CampaignsImg.png"
+import CampaignsImg from "media/home/CampaignsImg.webp"
 import Link from "next/link"
 
 

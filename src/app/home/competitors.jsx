@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap"
 import styles from "@/styles/home/competitors.module.scss"
-import CompetitorsImg from 'media/home/CompetitorsImg.png'
+import CompetitorsImg from 'media/home/CompetitorsImg.webp'
 import Image from "next/image"
 import Link from "next/link"
 

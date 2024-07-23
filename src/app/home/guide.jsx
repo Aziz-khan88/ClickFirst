@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap"
 import styles from "@/styles/home/campaigns.module.scss"
 import Image from "next/image"
-import GuideImg from "media/home/guideImg.png"
+import GuideImg from "media/home/guideImg.webp"
 import Link from "next/link"
 
 
@@ -22,7 +22,7 @@ const Guide = () => {
                         </div>
                     </Col>
                     <Col xl={6} lg={6} className="my-auto">
-                        <Image src={GuideImg} alt="CampaignsImg" height={600} />
+                        <Image src={GuideImg} alt="CampaignsImg" />
                     </Col>
                 </Row>
             </Container>
